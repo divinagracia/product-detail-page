@@ -38,3 +38,28 @@ $(".info-title ul li").on("click", function () {
     let paragraph = $(".description p")[index];
     $(paragraph).addClass("show");
 });
+
+$(window).resize(function () {
+    console.log(window.innerWidth);
+    setMobile();
+});
+
+function setMobile() {
+    if (window.matchMedia("screen and (max-width: 767px").matches) {
+        $(".nav-header").css("display", "none");
+        $(".site-header").css("display", "none");
+        $(".nav-bar").css("display", "none");
+        $(".mobile-nav").prependTo(".navigation");
+        $(".mobile-nav").css("display", "flex");
+        $(".product-img-container").prependTo(".product-content");
+        $("#wrapper").attr("src", "styles/img/footer-banner-2.png");
+    } else {
+        $(".nav-header").css("display", "block");
+        $(".site-header").css("display", "flex");
+        $(".nav-bar").css("display", "block");
+        $(".mobile-nav").css("display", "none");
+        $("#wrapper").attr("src", "styles/img/footer-banner.png");
+    }
+}
+
+setMobile();
