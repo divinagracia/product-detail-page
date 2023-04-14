@@ -52,13 +52,13 @@ function setMobile() {
         $(".mobile-nav").prependTo(".navigation");
         $(".mobile-nav").css("display", "flex");
         $(".product-img-container").prependTo(".product-content");
-        $("#wrapper").attr("src", "styles/img/footer-banner-2.png");
+        $("#wrapper").attr("src", "theme/img/footer-banner-2.png");
     } else {
         $(".nav-header").css("display", "block");
         $(".site-header").css("display", "flex");
         $(".nav-bar").css("display", "block");
         $(".mobile-nav").css("display", "none");
-        $("#wrapper").attr("src", "styles/img/footer-banner.png");
+        $("#wrapper").attr("src", "theme/img/footer-banner.png");
     }
 }
 
