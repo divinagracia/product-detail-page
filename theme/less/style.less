@@ -245,13 +245,17 @@ body {
                         text-align: end;
                         font-size: 15px;
 
-                        span {
+                        a {
                             font-size: 18px;
-                        }
-                    }
+                            color: @color-white;
+                            text-decoration: none;
+                            font-weight: 400;
+                            transition: 0.3s;
 
-                    .num {
-                        font-weight: 400;
+                            &:hover {
+                                color: @color-pomegranate;
+                            }
+                        }
                     }
                 }
             }
@@ -792,11 +796,19 @@ body {
             }
 
             .footer-contacts {
-                p {
-                    font-size: 18px;
-                    margin: 14px 0 10px;
-                    span {
-                        color: @color-pomegranate;
+                .contact-info {
+                    p {
+                        font-size: 18px;
+                        margin: 14px 0 10px;
+
+                        a {
+                            color: @color-pomegranate;
+                            text-decoration: none;
+
+                            &:hover {
+                                text-decoration: underline;
+                            }
+                        }
                     }
                 }
 
@@ -806,6 +818,16 @@ body {
 
                     img {
                         margin-right: 10px;
+                    }
+
+                    a {
+                        color: @color-white;
+                        text-decoration: none;
+                        transition: 0.3s;
+
+                        &:hover {
+                            color: @color-pomegranate;
+                        }
                     }
                 }
             }
