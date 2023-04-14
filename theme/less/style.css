@@ -292,9 +292,28 @@ body {
   padding: 0;
   position: absolute;
   top: 20px;
-  background-color: #f4f5f8;
+  background-color: #fff;
   color: #191919;
   display: block;
+  width: 124px;
+  font-size: 15px;
+  font-weight: 400;
+}
+.navigation .nav-bar .nav-bar-container .nav-links .menu-link li:hover ul li {
+  padding: 15px 5px;
+}
+.navigation .nav-bar .nav-bar-container .nav-links .menu-link li:hover ul li:hover {
+  cursor: pointer;
+  background-color: #f0f0f0;
+}
+.navigation .nav-bar .nav-bar-container .nav-links .menu-link li:hover ul li ul {
+  display: none;
+}
+.navigation .nav-bar .nav-bar-container .nav-links .menu-link li:hover ul .nav-dropdown:hover ul {
+  display: block;
+  position: absolute;
+  left: 124px;
+  top: 2px;
 }
 .navigation .nav-bar .nav-bar-container .nav-links .menu-link li a {
   text-decoration: none;
@@ -310,12 +329,6 @@ body {
 }
 .navigation .nav-bar .nav-bar-container .nav-links .menu-link li ul {
   display: none;
-}
-.navigation .nav-bar .nav-bar-container .nav-links .menu-link li ul li {
-  padding: 15px 5px;
-}
-.navigation .nav-bar .nav-bar-container .nav-links .menu-link li ul li:hover {
-  cursor: pointer;
 }
 .navigation .nav-title {
   text-align: center;
