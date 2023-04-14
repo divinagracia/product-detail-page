@@ -124,6 +124,9 @@ body {
   font-style: normal;
   border: 1px solid #f0f0f0;
 }
+.navigation .site-header .nav-search input[type="text"]:focus {
+  border: 1px solid #191919;
+}
 .navigation .site-header .nav-search .header-categories {
   display: flex;
   align-items: center;
@@ -649,6 +652,9 @@ body {
   outline: 0;
   border: 0;
   padding: 10px 37px;
+}
+.footer .panel-wrapper .subscription-container .email-container input[type="text"]:focus {
+  border: 1px solid #e73c17;
 }
 .footer .panel-wrapper .subscription-container .email-container ::placeholder {
   font-family: "Inter";
