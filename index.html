@@ -33,7 +33,11 @@
                     <a href="#"><img src="theme/img/needus-logo.png" /></a>
                 </div>
                 <div class="nav-search">
-                    <input type="text" placeholder="Seach Products" />
+                    <input
+                        type="text"
+                        placeholder="Seach Products"
+                        onkeyup="validate(this)"
+                    />
                     <div class="header-categories">
                         <p>All Categories <span class="arrow"></span></p>
                         <div class="categories">
@@ -44,10 +48,9 @@
                             </ul>
                         </div>
                     </div>
-
-                    <div class="search-bar">
+                    <button disabled id="button" class="search-bar">
                         <img src="theme/icons/search.png" />
-                    </div>
+                    </button>
                 </div>
                 <div class="nav-menu">
                     <div class="registration">
