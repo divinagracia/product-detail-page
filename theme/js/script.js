@@ -97,6 +97,7 @@ function validate(obj) {
     } else {
         document.getElementById("button").disabled = true;
     }
+    // document.getElementById("button").disabled = !obj.value.length > 0;
 }
 
 setMobile();

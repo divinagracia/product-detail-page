@@ -43,6 +43,9 @@ body {
   padding: 3px;
   margin: 0 10px;
 }
+.navigation .nav-header .nav-header-container .rate .eng:hover {
+  cursor: pointer;
+}
 .navigation .nav-header .nav-header-container .rate span {
   margin: 0 15px;
 }
@@ -61,6 +64,9 @@ body {
   transform: rotate(45deg);
   padding: 3px;
   margin: 0 10px;
+}
+.navigation .nav-header .nav-header-container .rate .usd:hover {
+  cursor: pointer;
 }
 .navigation .site-header {
   display: flex;
@@ -95,6 +101,9 @@ body {
   padding: 3px;
   margin: 0 10px;
 }
+.navigation .site-header .rate .eng:hover {
+  cursor: pointer;
+}
 .navigation .site-header .rate span {
   margin: 0 15px;
 }
@@ -113,6 +122,9 @@ body {
   transform: rotate(45deg);
   padding: 3px;
   margin: 0 10px;
+}
+.navigation .site-header .rate .usd:hover {
+  cursor: pointer;
 }
 .navigation .site-header .nav-search {
   display: flex;
@@ -202,6 +214,9 @@ body {
 .navigation .site-header .nav-menu .nav-menu-button img {
   margin: 0 5px;
 }
+.navigation .site-header .nav-menu .nav-menu-button img:hover {
+  cursor: pointer;
+}
 .navigation .site-header .nav-menu .nav-menu-button .badge {
   background-color: #e23000;
   color: #fff;
@@ -236,6 +251,9 @@ body {
   background-color: #e73c17;
   font-weight: 400;
   height: 100%;
+}
+.navigation .nav-bar .nav-bar-container .nav-categories:hover {
+  cursor: pointer;
 }
 .navigation .nav-bar .nav-bar-container .nav-categories p {
   margin: 0 25px;
