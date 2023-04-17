@@ -692,7 +692,7 @@ body {
   justify-content: center;
   transition: 0.4s;
 }
-.footer .panel-wrapper .subscription-container .email-container .subscribe-button:hover {
+.footer .panel-wrapper .subscription-container .email-container .subscribe-button:hover:enabled {
   cursor: pointer;
   background-color: #e23000;
 }

@@ -93,11 +93,11 @@ $(".footer").on("click", ".mobile > div.footer-links > ul", function () {
 
 function validate(obj) {
     if (obj.value.length > 0) {
-        document.getElementById("button").disabled = false;
+        console.log(obj);
+        $(obj).siblings("button").prop("disabled", false);
     } else {
-        document.getElementById("button").disabled = true;
+        $(obj).siblings("button").prop("disabled", true);
     }
-    // document.getElementById("button").disabled = !obj.value.length > 0;
 }
 
 setMobile();

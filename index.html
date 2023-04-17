@@ -48,12 +48,7 @@
                             </ul>
                         </div>
                     </div>
-                    <button
-                        disabled
-                        id="button"
-                        class="search-bar"
-                        title="Advanced Search"
-                    >
+                    <button disabled class="search-bar" title="Advanced Search">
                         <img src="theme/icons/search.png" />
                     </button>
                 </div>
@@ -431,10 +426,18 @@
                         </div>
                     </div>
                     <div class="email-container">
-                        <input type="text" placeholder="Enter your email" />
-                        <div class="subscribe-button" title="Subscribe">
+                        <input
+                            type="text"
+                            placeholder="Enter your email"
+                            onkeyup="validate(this)"
+                        />
+                        <button
+                            disabled
+                            class="subscribe-button"
+                            title="Subscribe"
+                        >
                             <p>SUBSCRIBE</p>
-                        </div>
+                        </button>
                     </div>
                 </div>
             </div>
