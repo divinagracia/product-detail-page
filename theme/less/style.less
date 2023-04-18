@@ -1337,21 +1337,22 @@ body {
                 top: 50px;
 
                 li {
-                    padding: 28px 30px;
-                    font-size: 20px;
+                    padding: 18px 30px;
+                    font-size: 10px;
                     border-bottom: 1px solid @color-alto;
-                    color: @color-cod-gray;
 
                     a {
                         text-decoration: none;
                         display: flex;
                         align-items: center;
                         justify-content: space-between;
+                        color: @color-cod-gray;
+                        font-weight: 700;
                     }
 
                     .arrow {
                         border: 1px solid;
-                        border-width: 0 3px 3px 0;
+                        border-width: 0 1px 1px 0;
                         display: inline-block;
                         transform: rotate(45deg);
                         padding: 3px;
@@ -1370,7 +1371,11 @@ body {
                         li {
                             list-style-type: none;
                             border: 0;
-                            padding: 20px 30px;
+                            padding: 8px 12px;
+
+                            a {
+                                font-weight: 500;
+                            }
                         }
                     }
                 }
@@ -1738,14 +1743,24 @@ body {
 
                     p {
                         display: none;
+                        font-size: 8px;
+                        margin: 10px 0;
                     }
 
                     .social-logos {
                         display: none;
+
+                        img {
+                            width: 18px;
+
+                            &:nth-of-type(even) {
+                                margin: 0 10px;
+                            }
+                        }
                     }
 
                     .arrow {
-                        border: solid black;
+                        border: solid @color-white;
                         border-width: 0 2px 2px 0;
                         display: inline-block;
                         padding: 3px;
@@ -1774,10 +1789,11 @@ body {
                         li {
                             display: none;
                             margin: 10px;
+                            font-size: 8px;
                         }
 
                         .arrow {
-                            border: solid black;
+                            border: solid @color-white;
                             border-width: 0 2px 2px 0;
                             display: inline-block;
                             padding: 3px;
@@ -1805,16 +1821,22 @@ body {
 
                         p {
                             display: none;
+                            font-size: 8px;
                         }
                     }
 
                     .other-contacts {
                         display: none;
                         margin: 12px 0;
+                        font-size: 8px;
+
+                        img {
+                            width: 18px;
+                        }
                     }
 
                     .arrow {
-                        border: solid black;
+                        border: solid @color-white;
                         border-width: 0 2px 2px 0;
                         display: inline-block;
                         padding: 3px;

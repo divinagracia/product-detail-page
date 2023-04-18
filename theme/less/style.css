@@ -1099,20 +1099,21 @@ body {
     top: 50px;
   }
   .navigation .nav-links .menu-link li {
-    padding: 28px 30px;
-    font-size: 20px;
+    padding: 18px 30px;
+    font-size: 10px;
     border-bottom: 1px solid #d9d9d9;
-    color: #191919;
   }
   .navigation .nav-links .menu-link li a {
     text-decoration: none;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    color: #191919;
+    font-weight: 700;
   }
   .navigation .nav-links .menu-link li .arrow {
     border: 1px solid;
-    border-width: 0 3px 3px 0;
+    border-width: 0 1px 1px 0;
     display: inline-block;
     transform: rotate(45deg);
     padding: 3px;
@@ -1129,7 +1130,10 @@ body {
   .navigation .nav-links .menu-link li ul li {
     list-style-type: none;
     border: 0;
-    padding: 20px 30px;
+    padding: 8px 12px;
+  }
+  .navigation .nav-links .menu-link li ul li a {
+    font-weight: 500;
   }
   .navigation .mobile-nav {
     justify-content: space-between;
@@ -1412,12 +1416,20 @@ body {
   }
   .footer .page-footer .page-footer-container .about p {
     display: none;
+    font-size: 8px;
+    margin: 10px 0;
   }
   .footer .page-footer .page-footer-container .about .social-logos {
     display: none;
   }
+  .footer .page-footer .page-footer-container .about .social-logos img {
+    width: 18px;
+  }
+  .footer .page-footer .page-footer-container .about .social-logos img:nth-of-type(even) {
+    margin: 0 10px;
+  }
   .footer .page-footer .page-footer-container .about .arrow {
-    border: solid black;
+    border: solid #fff;
     border-width: 0 2px 2px 0;
     display: inline-block;
     padding: 3px;
@@ -1443,9 +1455,10 @@ body {
   .footer .page-footer .page-footer-container .footer-links ul li {
     display: none;
     margin: 10px;
+    font-size: 8px;
   }
   .footer .page-footer .page-footer-container .footer-links ul .arrow {
-    border: solid black;
+    border: solid #fff;
     border-width: 0 2px 2px 0;
     display: inline-block;
     padding: 3px;
@@ -1468,13 +1481,18 @@ body {
   }
   .footer .page-footer .page-footer-container .footer-contacts .contact-info p {
     display: none;
+    font-size: 8px;
   }
   .footer .page-footer .page-footer-container .footer-contacts .other-contacts {
     display: none;
     margin: 12px 0;
+    font-size: 8px;
+  }
+  .footer .page-footer .page-footer-container .footer-contacts .other-contacts img {
+    width: 18px;
   }
   .footer .page-footer .page-footer-container .footer-contacts .arrow {
-    border: solid black;
+    border: solid #fff;
     border-width: 0 2px 2px 0;
     display: inline-block;
     padding: 3px;
