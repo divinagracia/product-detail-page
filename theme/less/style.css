@@ -1155,6 +1155,7 @@ body {
   .navigation .mobile-nav .mobile-nav-icons .menu-icon {
     background-color: #e73c17;
     padding: 5px;
+    display: flex;
   }
   .navigation .nav-title {
     padding: 25px 0;
