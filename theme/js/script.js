@@ -1,16 +1,27 @@
 var counter = 0;
 
-function plus() {
-    counter += 1;
-    document.getElementById("counter").innerHTML = counter;
-}
+var minus = document.querySelector(".subtract");
+var add = document.querySelector(".add");
+var quantity = document.querySelector(".item-quantity");
 
-function minus() {
-    if (counter > 0) {
-        counter -= 1;
+const minimum = 0;
+
+minus.addEventListener("click", function () {
+    if (quantity.value <= minimum) {
+        minus.disabled = true;
+        return;
+    } else {
+        minus.disabled = false;
     }
-    document.getElementById("counter").innerHTML = counter;
-}
+    quantity.value--;
+});
+
+add.addEventListener("click", function () {
+    if (quantity.value > minimum) {
+        minus.disabled = false;
+    }
+    quantity.value++;
+});
 
 $(".header-categories").click(function () {
     showCategories();
@@ -99,5 +110,10 @@ function validate(obj) {
         $(obj).siblings("button").prop("disabled", true);
     }
 }
+
+$(".selection").click(function () {
+    let selectedSrc = $(this).children("img").prop("src");
+    $(".product-img img").prop("src", selectedSrc);
+});
 
 setMobile();

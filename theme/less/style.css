@@ -9,7 +9,6 @@ body {
 }
 .navigation .nav-header {
   background-color: #2f333a;
-  font-size: 13px;
   font-weight: 150;
   height: 60px;
 }
@@ -18,10 +17,9 @@ body {
   justify-content: space-between;
   align-items: center;
   color: #fff;
-  max-width: 1760px;
   margin: 0 auto;
   height: 100%;
-  font-size: 16px;
+  max-width: 1920px;
 }
 .navigation .nav-header .nav-header-container .rate {
   display: flex;
@@ -73,12 +71,10 @@ body {
   justify-content: space-between;
   align-items: center;
   color: #fff;
-  max-width: 1760px;
   margin: 0 auto;
   height: 100%;
-  font-size: 16px;
+  max-width: 1920px;
   color: #191919;
-  padding: 42px 0;
   font-size: 20px;
 }
 .navigation .site-header .rate {
@@ -240,23 +236,21 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 1760px;
   margin: 0 auto;
   color: #fff;
   height: 100%;
+  max-width: 1920px;
 }
 .navigation .nav-bar .nav-bar-container .nav-categories {
   display: flex;
   align-items: center;
+  justify-content: space-evenly;
   background-color: #e73c17;
   font-weight: 400;
   height: 100%;
 }
 .navigation .nav-bar .nav-bar-container .nav-categories:hover {
   cursor: pointer;
-}
-.navigation .nav-bar .nav-bar-container .nav-categories p {
-  margin: 0 25px;
 }
 .navigation .nav-bar .nav-bar-container .nav-categories .arrow {
   border: 1px solid;
@@ -268,11 +262,13 @@ body {
 .navigation .nav-bar .nav-bar-container .nav-contact {
   display: flex;
   align-items: center;
+  justify-content: end;
   border-left: 1px solid;
   height: 100%;
+  width: 16%;
 }
 .navigation .nav-bar .nav-bar-container .nav-contact img {
-  margin: 0 33px;
+  margin-right: 33px;
   width: 40px;
 }
 .navigation .nav-bar .nav-bar-container .nav-contact .contact-text .contact-title {
@@ -282,7 +278,7 @@ body {
 .navigation .nav-bar .nav-bar-container .nav-contact .contact-text p {
   margin: 0;
   line-height: 1.5;
-  text-align: end;
+  text-align: center;
   font-size: 15px;
 }
 .navigation .nav-bar .nav-bar-container .nav-contact .contact-text p a {
@@ -306,6 +302,9 @@ body {
 }
 .navigation .nav-bar .nav-bar-container .nav-links .menu-link li {
   position: relative;
+}
+.navigation .nav-bar .nav-bar-container .nav-links .menu-link li:nth-last-of-type(even) {
+  margin: 0 20px;
 }
 .navigation .nav-bar .nav-bar-container .nav-links .menu-link li:hover ul {
   padding: 0;
@@ -369,7 +368,7 @@ body {
   display: none;
 }
 .main-content {
-  max-width: 1760px;
+  max-width: 1920px;
   margin: 0 auto;
 }
 .main-content .product-content {
@@ -382,7 +381,7 @@ body {
   justify-content: center;
 }
 .main-content .product-content .selection-container .selection:nth-of-type(even) {
-  margin: 27px 0;
+  margin: 38px 0;
 }
 .main-content .product-content .selection-container .selection:hover {
   cursor: pointer;
@@ -393,10 +392,12 @@ body {
 .main-content .product-content .product-img-container .product-img {
   display: flex;
   justify-content: center;
+  align-items: center;
   background-color: #f1f1f1;
+  height: 100%;
 }
 .main-content .product-content .product-img-container .product-img img {
-  width: 65%;
+  width: 90%;
 }
 .main-content .product-content .product-img-container p {
   color: #6f6f6f;
@@ -471,15 +472,20 @@ body {
   padding: 0;
   font-size: 38px;
 }
-.main-content .product-content .product-details .product-buttons-container .input-box p {
+.main-content .product-content .product-details .product-buttons-container .input-box input {
   width: 100%;
   height: 100%;
   border: 1px solid #f0f0f0;
+  text-align: center;
+  font-size: 30px;
+}
+.main-content .product-content .product-details .product-buttons-container .input-box input::-webkit-outer-spin-button,
+.main-content .product-content .product-details .product-buttons-container .input-box input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
   margin: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 32px;
+}
+.main-content .product-content .product-details .product-buttons-container .input-box input[type="number"] {
+  -moz-appearance: textfield;
 }
 .main-content .product-content .product-details .product-buttons-container #buy-button {
   background-color: #e73c17;
@@ -634,7 +640,6 @@ body {
   margin-top: 150px;
 }
 .footer .panel-wrapper {
-  background-color: #2f333a;
   position: relative;
   display: flex;
   justify-content: center;
@@ -643,15 +648,17 @@ body {
 .footer .panel-wrapper #wrapper {
   filter: brightness(0.7);
   width: 100%;
+  height: 9vh;
 }
 .footer .panel-wrapper .subscription-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  max-width: 1760px;
   margin: 0 auto;
   position: absolute;
+  padding: 0 80px;
+  max-width: 1635px;
 }
 .footer .panel-wrapper .subscription-container .newsletter {
   display: flex;
@@ -707,8 +714,10 @@ body {
   line-height: 1.8;
   font-weight: 200;
   color: #fff;
-  max-width: 1760px;
+  max-width: 1920px;
   margin: 0 auto;
+  padding: 30px 80px;
+  flex-wrap: wrap;
 }
 .footer .page-footer .page-footer-container h2 {
   font-weight: 400;
@@ -720,13 +729,11 @@ body {
 .footer .page-footer .page-footer-container .about .social-logos img {
   width: 30px;
   transition: 0.4s;
+  margin: 15px 15px 0 0;
 }
 .footer .page-footer .page-footer-container .about .social-logos img:hover {
   transform: translate(0, -8px);
   cursor: pointer;
-}
-.footer .page-footer .page-footer-container .about .social-logos img:nth-of-type(even) {
-  margin: 0 16px;
 }
 .footer .page-footer .page-footer-container .footer-links {
   display: flex;
@@ -782,6 +789,13 @@ body {
   .navigation {
     margin-bottom: 90px;
   }
+  .navigation .nav-header .nav-header-container {
+    padding: 0 80px;
+    font-size: 16px;
+  }
+  .navigation .site-header {
+    padding: 42px 80px;
+  }
   .navigation .site-header .logo img {
     width: 160px;
   }
@@ -803,12 +817,12 @@ body {
   .navigation .site-header .nav-search .search-bar {
     padding: 17px;
   }
+  .navigation .nav-bar .nav-bar-container {
+    padding: 0 80px;
+  }
   .navigation .nav-bar .nav-bar-container .nav-categories {
     font-size: 24px;
-    padding: 18px 64px;
-  }
-  .navigation .nav-bar .nav-bar-container .nav-contact {
-    padding-left: 60px;
+    width: 21%;
   }
   .navigation .nav-bar .nav-bar-container .nav-links {
     font-size: 16px;
@@ -822,6 +836,9 @@ body {
   }
   .navigation .nav-title p {
     font-size: 18px;
+  }
+  .main-content {
+    padding: 0 80px;
   }
   .main-content .product-content .selection-container {
     width: 15%;
@@ -837,10 +854,8 @@ body {
   }
   .main-content .product-content .product-img-container {
     width: 50%;
+    height: 717px;
     margin: 0 25px;
-  }
-  .main-content .product-content .product-img-container .product-img {
-    padding: 208px 0;
   }
   .main-content .product-content .product-img-container p {
     margin: 35px 0;
@@ -883,9 +898,6 @@ body {
   .main-content .related-products-section .related-products-container {
     margin: 93px 0 220px;
   }
-  .footer .panel-wrapper .subscription-container {
-    padding: 0 150px;
-  }
   .footer .panel-wrapper .subscription-container .newsletter .newsletter-text {
     margin-left: 29px;
   }
@@ -896,7 +908,7 @@ body {
     font-size: 28px;
   }
   .footer .panel-wrapper .subscription-container .email-container {
-    width: 50%;
+    width: 48%;
   }
   .footer .panel-wrapper .subscription-container .email-container input[type="text"] {
     width: 80%;
@@ -904,11 +916,8 @@ body {
     font-size: 20px;
   }
   .footer .panel-wrapper .subscription-container .email-container .subscribe-button {
-    width: 46%;
+    width: 50%;
     font-size: 20px;
-  }
-  .footer .page-footer .page-footer-container {
-    padding: 30px 0;
   }
   .footer .page-footer .page-footer-container h2 {
     font-size: 24px;
@@ -926,6 +935,12 @@ body {
 @media only screen and (max-width: 1024px) {
   .navigation {
     margin-bottom: 80px;
+  }
+  .navigation .nav-header .nav-header-container {
+    padding: 0 20px;
+  }
+  .navigation .site-header {
+    padding: 42px 20px;
   }
   .navigation .site-header .logo img {
     width: 110px;
@@ -953,6 +968,9 @@ body {
   .navigation .site-header .nav-menu {
     font-size: 13px;
   }
+  .navigation .nav-bar .nav-bar-container {
+    padding: 0 20px;
+  }
   .navigation .nav-bar .nav-bar-container .nav-categories {
     font-size: 20px;
     padding: 18px 35px;
@@ -973,9 +991,19 @@ body {
   .navigation .nav-title p {
     font-size: 14px;
   }
+  .main-content {
+    padding: 0 20px;
+  }
   .main-content .product-content {
     flex-wrap: wrap;
     justify-content: center;
+  }
+  .main-content .product-content .selection-container .selection {
+    width: 157px;
+    height: 120px;
+  }
+  .main-content .product-content .selection-container .selection img {
+    width: 75%;
   }
   .main-content .product-content .product-img-container {
     width: 70%;
@@ -987,6 +1015,7 @@ body {
   .main-content .product-content .product-details {
     width: 100%;
     padding: 0 40px;
+    margin: 60px 0;
   }
   .main-content .product-content .product-details .star-rates {
     margin: 15px 0;
@@ -1021,9 +1050,6 @@ body {
   .main-content .product-content .product-details .product-buttons-container .container:nth-of-type(even) {
     margin: 0 34px;
   }
-  .footer .panel-wrapper .subscription-container {
-    padding: 0 40px;
-  }
   .footer .panel-wrapper .subscription-container .newsletter img {
     width: 40px;
   }
@@ -1036,17 +1062,20 @@ body {
   .footer .panel-wrapper .subscription-container .newsletter .newsletter-text h2 {
     font-size: 18px;
   }
+  .footer .panel-wrapper .subscription-container .email-container {
+    width: 40%;
+  }
   .footer .panel-wrapper .subscription-container .email-container input[type="text"] {
-    width: 230px;
+    width: 90%;
     height: 40px;
-    font-size: 16px;
+    font-size: 13px;
   }
   .footer .panel-wrapper .subscription-container .email-container .subscribe-button {
-    width: 120px;
+    width: 70%;
     font-size: 15px;
+    font-size: 10px;
   }
   .footer .page-footer .page-footer-container {
-    padding: 30px 40px;
     flex-wrap: wrap;
   }
   .footer .page-footer .page-footer-container .about {

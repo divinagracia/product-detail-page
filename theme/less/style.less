@@ -14,7 +14,7 @@ body {
 .navigation {
     .nav-header {
         background-color: @color-tuna;
-        font-size: 13px;
+
         font-weight: 150;
         height: 60px;
 
@@ -23,10 +23,9 @@ body {
             justify-content: space-between;
             align-items: center;
             color: @color-white;
-            max-width: 1760px;
             margin: 0 auto;
             height: 100%;
-            font-size: 16px;
+            max-width: 1920px;
 
             .rate {
                 display: flex;
@@ -69,7 +68,6 @@ body {
     .site-header {
         .nav-header > .nav-header-container;
         color: @color-cod-gray;
-        padding: 42px 0;
         font-size: 20px;
 
         .nav-search {
@@ -208,24 +206,21 @@ body {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            max-width: 1760px;
             margin: 0 auto;
             color: @color-white;
             height: 100%;
+            max-width: 1920px;
 
             .nav-categories {
                 display: flex;
                 align-items: center;
+                justify-content: space-evenly;
                 background-color: @color-pomegranate;
                 font-weight: 400;
                 height: 100%;
 
                 &:hover {
                     cursor: pointer;
-                }
-
-                p {
-                    margin: 0 25px;
                 }
 
                 .arrow {
@@ -240,12 +235,13 @@ body {
             .nav-contact {
                 display: flex;
                 align-items: center;
-
+                justify-content: end;
                 border-left: 1px solid;
                 height: 100%;
+                width: 16%;
 
                 img {
-                    margin: 0 33px;
+                    margin-right: 33px;
                     width: 40px;
                 }
 
@@ -258,7 +254,7 @@ body {
                     p {
                         margin: 0;
                         line-height: 1.5;
-                        text-align: end;
+                        text-align: center;
                         font-size: 15px;
 
                         a {
@@ -287,6 +283,10 @@ body {
 
                     li {
                         position: relative;
+
+                        &:nth-last-of-type(even) {
+                            margin: 0 20px;
+                        }
 
                         &:hover ul {
                             padding: 0;
@@ -370,7 +370,7 @@ body {
 }
 
 .main-content {
-    max-width: 1760px;
+    max-width: 1920px;
     margin: 0 auto;
 
     .product-content {
@@ -384,7 +384,7 @@ body {
                 justify-content: center;
 
                 &:nth-of-type(even) {
-                    margin: 27px 0;
+                    margin: 38px 0;
                 }
 
                 &:hover {
@@ -401,10 +401,12 @@ body {
             .product-img {
                 display: flex;
                 justify-content: center;
+                align-items: center;
                 background-color: @color-seashell;
+                height: 100%;
 
                 img {
-                    width: 65%;
+                    width: 90%;
                 }
             }
 
@@ -495,15 +497,22 @@ body {
                         font-size: 38px;
                     }
 
-                    p {
+                    input {
                         width: 100%;
                         height: 100%;
                         border: 1px solid @color-gallery;
+                        text-align: center;
+                        font-size: 30px;
+                    }
+
+                    input::-webkit-outer-spin-button,
+                    input::-webkit-inner-spin-button {
+                        -webkit-appearance: none;
                         margin: 0;
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        font-size: 32px;
+                    }
+
+                    input[type="number"] {
+                        -moz-appearance: textfield;
                     }
                 }
 
@@ -700,7 +709,6 @@ body {
     margin-top: 150px;
 
     .panel-wrapper {
-        background-color: @color-tuna;
         position: relative;
         display: flex;
         justify-content: center;
@@ -709,6 +717,7 @@ body {
         #wrapper {
             filter: brightness(0.7);
             width: 100%;
+            height: 9vh;
         }
 
         .subscription-container {
@@ -716,9 +725,10 @@ body {
             justify-content: space-between;
             align-items: center;
             width: 100%;
-            max-width: 1760px;
             margin: 0 auto;
             position: absolute;
+            padding: 0 80px;
+            max-width: 1635px;
 
             .newsletter {
                 display: flex;
@@ -787,8 +797,10 @@ body {
             line-height: 1.8;
             font-weight: 200;
             color: @color-white;
-            max-width: 1760px;
+            max-width: 1920px;
             margin: 0 auto;
+            padding: 30px 80px;
+            flex-wrap: wrap;
 
             h2 {
                 font-weight: 400;
@@ -804,14 +816,11 @@ body {
                     img {
                         width: 30px;
                         transition: 0.4s;
+                        margin: 15px 15px 0 0;
 
                         &:hover {
                             transform: translate(0, -8px);
                             cursor: pointer;
-                        }
-
-                        &:nth-of-type(even) {
-                            margin: 0 16px;
                         }
                     }
                 }
@@ -891,7 +900,16 @@ body {
     .navigation {
         margin-bottom: 90px;
 
+        .nav-header {
+            .nav-header-container {
+                padding: 0 80px;
+                font-size: 16px;
+            }
+        }
+
         .site-header {
+            padding: 42px 80px;
+
             .logo {
                 img {
                     width: 160px;
@@ -924,13 +942,11 @@ body {
 
         .nav-bar {
             .nav-bar-container {
+                padding: 0 80px;
+
                 .nav-categories {
                     font-size: 24px;
-                    padding: 18px 64px;
-                }
-
-                .nav-contact {
-                    padding-left: 60px;
+                    width: 21%;
                 }
 
                 .nav-links {
@@ -954,6 +970,7 @@ body {
     }
 
     .main-content {
+        padding: 0 80px;
         .product-content {
             .selection-container {
                 width: 15%;
@@ -973,11 +990,8 @@ body {
 
             .product-img-container {
                 width: 50%;
+                height: 717px;
                 margin: 0 25px;
-
-                .product-img {
-                    padding: 208px 0;
-                }
 
                 p {
                     margin: 35px 0;
@@ -1041,8 +1055,6 @@ body {
     .footer {
         .panel-wrapper {
             .subscription-container {
-                padding: 0 150px;
-
                 .newsletter {
                     .newsletter-text {
                         margin-left: 29px;
@@ -1056,7 +1068,7 @@ body {
                 }
 
                 .email-container {
-                    width: 50%;
+                    width: 48%;
 
                     input[type="text"] {
                         width: 80%;
@@ -1065,7 +1077,7 @@ body {
                     }
 
                     .subscribe-button {
-                        width: 46%;
+                        width: 50%;
                         font-size: 20px;
                     }
                 }
@@ -1074,8 +1086,6 @@ body {
 
         .page-footer {
             .page-footer-container {
-                padding: 30px 0;
-
                 h2 {
                     font-size: 24px;
                 }
@@ -1100,7 +1110,16 @@ body {
     // Tab
     .navigation {
         margin-bottom: 80px;
+
+        .nav-header {
+            .nav-header-container {
+                padding: 0 20px;
+            }
+        }
+
         .site-header {
+            padding: 42px 20px;
+
             .logo {
                 img {
                     width: 110px;
@@ -1139,6 +1158,8 @@ body {
 
         .nav-bar {
             .nav-bar-container {
+                padding: 0 20px;
+
                 .nav-categories {
                     font-size: 20px;
                     padding: 18px 35px;
@@ -1169,9 +1190,22 @@ body {
     }
 
     .main-content {
+        padding: 0 20px;
+
         .product-content {
             flex-wrap: wrap;
             justify-content: center;
+
+            .selection-container {
+                .selection {
+                    width: 157px;
+                    height: 120px;
+
+                    img {
+                        width: 75%;
+                    }
+                }
+            }
 
             .product-img-container {
                 width: 70%;
@@ -1185,6 +1219,7 @@ body {
             .product-details {
                 width: 100%;
                 padding: 0 40px;
+                margin: 60px 0;
 
                 .star-rates {
                     margin: 15px 0;
@@ -1236,7 +1271,6 @@ body {
     .footer {
         .panel-wrapper {
             .subscription-container {
-                padding: 0 40px;
                 .newsletter {
                     img {
                         width: 40px;
@@ -1253,15 +1287,18 @@ body {
                     }
                 }
                 .email-container {
+                    width: 40%;
+
                     input[type="text"] {
-                        width: 230px;
+                        width: 90%;
                         height: 40px;
-                        font-size: 16px;
+                        font-size: 13px;
                     }
 
                     .subscribe-button {
-                        width: 120px;
+                        width: 70%;
                         font-size: 15px;
+                        font-size: 10px;
                     }
                 }
             }
@@ -1269,7 +1306,6 @@ body {
 
         .page-footer {
             .page-footer-container {
-                padding: 30px 40px;
                 flex-wrap: wrap;
 
                 .about {
