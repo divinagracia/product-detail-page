@@ -90,7 +90,6 @@ body {
                 display: flex;
                 justify-content: center;
                 border: 1px solid @color-gallery;
-                width: 210px;
 
                 p {
                     display: flex;
@@ -114,6 +113,7 @@ body {
             .search-bar {
                 transition: 0.3s;
                 background: @color-tuna;
+                height: inherit;
 
                 &:hover:enabled {
                     cursor: pointer;
@@ -283,10 +283,6 @@ body {
 
                     li {
                         position: relative;
-
-                        &:nth-last-of-type(even) {
-                            margin: 0 20px;
-                        }
 
                         &:hover ul {
                             padding: 0;
@@ -717,7 +713,7 @@ body {
         #wrapper {
             filter: brightness(0.7);
             width: 100%;
-            height: 9vh;
+            height: 6vw;
         }
 
         .subscription-container {
@@ -917,17 +913,19 @@ body {
             }
 
             .nav-search {
-                width: 52%;
+                width: 53%;
+                height: 70px;
 
                 input[type="text"] {
                     font-size: 20px;
-                    padding: 20px;
+                    padding: 0 43px;
                     width: 80%;
+                    height: inherit;
                 }
 
                 .header-categories {
-                    width: 27%;
-                    height: 70px;
+                    width: 26%;
+                    height: inherit;
 
                     p {
                         margin: 0 20px;
@@ -935,7 +933,7 @@ body {
                 }
 
                 .search-bar {
-                    padding: 17px;
+                    width: 77px;
                 }
             }
         }
