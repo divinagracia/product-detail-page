@@ -19,7 +19,7 @@ body {
   color: #fff;
   margin: 0 auto;
   height: 100%;
-  max-width: 1920px;
+  max-width: 1800px;
 }
 .navigation .nav-header .nav-header-container .rate {
   display: flex;
@@ -73,7 +73,7 @@ body {
   color: #fff;
   margin: 0 auto;
   height: 100%;
-  max-width: 1920px;
+  max-width: 1800px;
   color: #191919;
   font-size: 20px;
 }
@@ -229,7 +229,7 @@ body {
 }
 .navigation .nav-bar {
   background-color: #2f333a;
-  font-weight: 200;
+  font-weight: 400;
   height: 78px;
 }
 .navigation .nav-bar .nav-bar-container {
@@ -239,7 +239,7 @@ body {
   margin: 0 auto;
   color: #fff;
   height: 100%;
-  max-width: 1920px;
+  max-width: 1800px;
 }
 .navigation .nav-bar .nav-bar-container .nav-categories {
   display: flex;
@@ -248,6 +248,7 @@ body {
   background-color: #e73c17;
   font-weight: 400;
   height: 100%;
+  padding: 0 30px;
 }
 .navigation .nav-bar .nav-bar-container .nav-categories:hover {
   cursor: pointer;
@@ -259,21 +260,19 @@ body {
   transform: rotate(45deg);
   padding: 3px;
 }
+.navigation .nav-bar .nav-bar-container .nav-categories p {
+  margin: 0 10px;
+}
 .navigation .nav-bar .nav-bar-container .nav-contact {
   display: flex;
   align-items: center;
   justify-content: end;
   border-left: 1px solid;
   height: 100%;
-  width: 16%;
 }
 .navigation .nav-bar .nav-bar-container .nav-contact img {
   margin-right: 33px;
   width: 40px;
-}
-.navigation .nav-bar .nav-bar-container .nav-contact .contact-text .contact-title {
-  margin: 0;
-  font-weight: 200;
 }
 .navigation .nav-bar .nav-bar-container .nav-contact .contact-text p {
   margin: 0;
@@ -281,14 +280,14 @@ body {
   text-align: center;
   font-size: 15px;
 }
-.navigation .nav-bar .nav-bar-container .nav-contact .contact-text p a {
+.navigation .nav-bar .nav-bar-container .nav-contact .contact-text a {
   font-size: 18px;
   color: #fff;
   text-decoration: none;
   font-weight: 400;
   transition: 0.3s;
 }
-.navigation .nav-bar .nav-bar-container .nav-contact .contact-text p a:hover {
+.navigation .nav-bar .nav-bar-container .nav-contact .contact-text a:hover {
   color: #e73c17;
 }
 .navigation .nav-bar .nav-bar-container .nav-links {
@@ -367,6 +366,7 @@ body {
 .main-content {
   max-width: 1920px;
   margin: 0 auto;
+  padding: 0 20px;
 }
 .main-content .product-content {
   display: flex;
@@ -634,7 +634,7 @@ body {
   text-decoration: line-through;
 }
 .footer {
-  margin-top: 150px;
+  margin-top: 213px;
 }
 .footer .panel-wrapper {
   position: relative;
@@ -711,9 +711,9 @@ body {
   line-height: 1.8;
   font-weight: 200;
   color: #fff;
-  max-width: 1920px;
+  max-width: 1800px;
   margin: 0 auto;
-  padding: 30px 80px;
+  padding: 30px 20px;
   flex-wrap: wrap;
 }
 .footer .page-footer .page-footer-container h2 {
@@ -787,11 +787,11 @@ body {
     margin-bottom: 90px;
   }
   .navigation .nav-header .nav-header-container {
-    padding: 0 80px;
+    padding: 0 20px;
     font-size: 16px;
   }
   .navigation .site-header {
-    padding: 42px 80px;
+    padding: 42px 20px;
   }
   .navigation .site-header .logo img {
     width: 160px;
@@ -816,15 +816,15 @@ body {
   .navigation .site-header .nav-search .search-bar {
     width: 77px;
   }
-  .navigation .nav-bar .nav-bar-container {
-    padding: 0 80px;
-  }
   .navigation .nav-bar .nav-bar-container .nav-categories {
     font-size: 24px;
     width: 21%;
   }
   .navigation .nav-bar .nav-bar-container .nav-links {
     font-size: 16px;
+  }
+  .navigation .nav-bar .nav-bar-container .nav-contact {
+    padding-left: 5%;
   }
   .navigation .nav-title {
     padding: 60px 0;
@@ -836,11 +836,8 @@ body {
   .navigation .nav-title p {
     font-size: 18px;
   }
-  .main-content {
-    padding: 0 80px;
-  }
   .main-content .product-content .selection-container {
-    width: 15%;
+    width: 19%;
   }
   .main-content .product-content .selection-container .selection {
     height: 150px;
@@ -895,7 +892,7 @@ body {
     font-size: 18px;
   }
   .main-content .related-products-section .related-products-container {
-    margin: 93px 0 220px;
+    margin-top: 93px;
   }
   .footer .panel-wrapper .subscription-container .newsletter .newsletter-text {
     margin-left: 29px;
@@ -967,18 +964,29 @@ body {
   .navigation .site-header .nav-menu {
     font-size: 13px;
   }
-  .navigation .nav-bar .nav-bar-container {
-    padding: 0 20px;
-  }
   .navigation .nav-bar .nav-bar-container .nav-categories {
     font-size: 20px;
-    padding: 18px 35px;
+    width: 25%;
   }
   .navigation .nav-bar .nav-bar-container .nav-categories p {
     font-size: 15px;
   }
   .navigation .nav-bar .nav-bar-container .nav-links {
-    font-size: 13px;
+    font-size: 12px;
+    width: 450px;
+  }
+  .navigation .nav-bar .nav-bar-container .nav-contact {
+    padding-left: 3%;
+  }
+  .navigation .nav-bar .nav-bar-container .nav-contact img {
+    margin-right: 15px;
+    width: 30px;
+  }
+  .navigation .nav-bar .nav-bar-container .nav-contact .contact-text p {
+    font-size: 12px;
+  }
+  .navigation .nav-bar .nav-bar-container .nav-contact .contact-text a {
+    font-size: 15px;
   }
   .navigation .nav-title {
     padding: 40px 0;
@@ -989,9 +997,6 @@ body {
   }
   .navigation .nav-title p {
     font-size: 14px;
-  }
-  .main-content {
-    padding: 0 20px;
   }
   .main-content .product-content {
     flex-wrap: wrap;
@@ -1196,9 +1201,6 @@ body {
     margin: 5px 0;
     letter-spacing: 1.2px;
     font-size: 8px;
-  }
-  .main-content {
-    padding: 0 20px;
   }
   .main-content .product-content .product-img-container {
     margin: 0;

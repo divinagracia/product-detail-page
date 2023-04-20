@@ -25,7 +25,7 @@ body {
             color: @color-white;
             margin: 0 auto;
             height: 100%;
-            max-width: 1920px;
+            max-width: 1800px;
 
             .rate {
                 display: flex;
@@ -199,7 +199,7 @@ body {
 
     .nav-bar {
         background-color: @color-tuna;
-        font-weight: 200;
+        font-weight: 400;
         height: 78px;
 
         .nav-bar-container {
@@ -209,7 +209,7 @@ body {
             margin: 0 auto;
             color: @color-white;
             height: 100%;
-            max-width: 1920px;
+            max-width: 1800px;
 
             .nav-categories {
                 display: flex;
@@ -218,6 +218,7 @@ body {
                 background-color: @color-pomegranate;
                 font-weight: 400;
                 height: 100%;
+                padding: 0 30px;
 
                 &:hover {
                     cursor: pointer;
@@ -230,6 +231,10 @@ body {
                     transform: rotate(45deg);
                     padding: 3px;
                 }
+
+                p {
+                    margin: 0 10px;
+                }
             }
 
             .nav-contact {
@@ -238,7 +243,6 @@ body {
                 justify-content: end;
                 border-left: 1px solid;
                 height: 100%;
-                width: 16%;
 
                 img {
                     margin-right: 33px;
@@ -246,27 +250,22 @@ body {
                 }
 
                 .contact-text {
-                    .contact-title {
-                        margin: 0;
-                        font-weight: 200;
-                    }
-
                     p {
                         margin: 0;
                         line-height: 1.5;
                         text-align: center;
                         font-size: 15px;
+                    }
 
-                        a {
-                            font-size: 18px;
-                            color: @color-white;
-                            text-decoration: none;
-                            font-weight: 400;
-                            transition: 0.3s;
+                    a {
+                        font-size: 18px;
+                        color: @color-white;
+                        text-decoration: none;
+                        font-weight: 400;
+                        transition: 0.3s;
 
-                            &:hover {
-                                color: @color-pomegranate;
-                            }
+                        &:hover {
+                            color: @color-pomegranate;
                         }
                     }
                 }
@@ -368,6 +367,7 @@ body {
 .main-content {
     max-width: 1920px;
     margin: 0 auto;
+    padding: 0 20px;
 
     .product-content {
         display: flex;
@@ -702,7 +702,7 @@ body {
 }
 
 .footer {
-    margin-top: 150px;
+    margin-top: 213px;
 
     .panel-wrapper {
         position: relative;
@@ -793,9 +793,9 @@ body {
             line-height: 1.8;
             font-weight: 200;
             color: @color-white;
-            max-width: 1920px;
+            max-width: 1800px;
             margin: 0 auto;
-            padding: 30px 80px;
+            padding: 30px 20px;
             flex-wrap: wrap;
 
             h2 {
@@ -898,13 +898,13 @@ body {
 
         .nav-header {
             .nav-header-container {
-                padding: 0 80px;
+                padding: 0 20px;
                 font-size: 16px;
             }
         }
 
         .site-header {
-            padding: 42px 80px;
+            padding: 42px 20px;
 
             .logo {
                 img {
@@ -940,8 +940,6 @@ body {
 
         .nav-bar {
             .nav-bar-container {
-                padding: 0 80px;
-
                 .nav-categories {
                     font-size: 24px;
                     width: 21%;
@@ -949,6 +947,10 @@ body {
 
                 .nav-links {
                     font-size: 16px;
+                }
+
+                .nav-contact {
+                    padding-left: 5%;
                 }
             }
         }
@@ -968,10 +970,9 @@ body {
     }
 
     .main-content {
-        padding: 0 80px;
         .product-content {
             .selection-container {
-                width: 15%;
+                width: 19%;
 
                 .selection {
                     height: 150px;
@@ -1045,7 +1046,7 @@ body {
 
         .related-products-section {
             .related-products-container {
-                margin: 93px 0 220px;
+                margin-top: 93px;
             }
         }
     }
@@ -1156,11 +1157,9 @@ body {
 
         .nav-bar {
             .nav-bar-container {
-                padding: 0 20px;
-
                 .nav-categories {
                     font-size: 20px;
-                    padding: 18px 35px;
+                    width: 25%;
 
                     p {
                         font-size: 15px;
@@ -1168,7 +1167,26 @@ body {
                 }
 
                 .nav-links {
-                    font-size: 13px;
+                    font-size: 12px;
+                    width: 450px;
+                }
+
+                .nav-contact {
+                    padding-left: 3%;
+
+                    img {
+                        margin-right: 15px;
+                        width: 30px;
+                    }
+                    .contact-text {
+                        p {
+                            font-size: 12px;
+                        }
+
+                        a {
+                            font-size: 15px;
+                        }
+                    }
                 }
             }
         }
@@ -1188,8 +1206,6 @@ body {
     }
 
     .main-content {
-        padding: 0 20px;
-
         .product-content {
             flex-wrap: wrap;
             justify-content: center;
@@ -1460,8 +1476,6 @@ body {
     }
 
     .main-content {
-        padding: 0 20px;
-
         .product-content {
             .product-img-container {
                 margin: 0;
