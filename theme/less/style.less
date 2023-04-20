@@ -365,7 +365,7 @@ body {
 }
 
 .main-content {
-    max-width: 1920px;
+    max-width: 1800px;
     margin: 0 auto;
     padding: 0 20px;
 
@@ -609,8 +609,7 @@ body {
                     .badges {
                         display: flex;
                         justify-content: space-between;
-                        align-items: center;
-                        padding: 7px 25px;
+                        padding: 27px 25px;
 
                         .tag {
                             width: fit-content;
@@ -619,6 +618,7 @@ body {
                             border-radius: 50px;
                             font-size: 10px;
                             font-weight: 300;
+                            height: 26px;
                         }
 
                         .heart-border {
@@ -626,6 +626,11 @@ body {
                             padding: 12px;
                             border-radius: 50px;
                             display: flex;
+
+                            &:hover {
+                                border: 1px solid @color-pomegranate;
+                                cursor: pointer;
+                            }
                         }
 
                         #new {
@@ -649,8 +654,21 @@ body {
                         }
                     }
 
+                    .quick-view-container {
+                        position: relative;
+
+                        img {
+                            position: absolute;
+                            right: 40px;
+
+                            &:hover {
+                                cursor: pointer;
+                            }
+                        }
+                    }
+
                     #r-prod {
-                        margin: 125px 40px 94px;
+                        margin: 92px 40px 80px;
                         width: 275px;
                     }
 
@@ -894,7 +912,7 @@ body {
 @media only screen and (min-width: 1025px) {
     // Desktop
     .navigation {
-        margin-bottom: 90px;
+        margin-bottom: 85px;
 
         .nav-header {
             .nav-header-container {
@@ -972,7 +990,7 @@ body {
     .main-content {
         .product-content {
             .selection-container {
-                width: 19%;
+                width: 15%;
 
                 .selection {
                     height: 150px;
@@ -999,7 +1017,7 @@ body {
             }
 
             .product-details {
-                width: 57%;
+                width: 56%;
 
                 h2 {
                     text-transform: uppercase;
@@ -1480,23 +1498,25 @@ body {
             .product-img-container {
                 margin: 0;
                 width: 100%;
+                height: 248px;
 
                 .product-img {
                     padding: 46px 0;
 
                     img {
-                        width: 79%;
+                        width: 298px;
                     }
                 }
 
                 p {
-                    font-size: 9px;
+                    font-size: 6px;
+                    margin: 5px 0;
                 }
             }
 
             .selection-container {
                 display: flex;
-                margin: 0;
+                margin: 27px 0 2px;
 
                 .selection {
                     height: 88px;
@@ -1670,8 +1690,11 @@ body {
                             padding: 6px 8px;
 
                             .tag {
-                                padding: 3px 10px;
                                 font-size: 6px;
+                                display: flex;
+                                align-items: center;
+                                padding: 0 9px;
+                                height: 12px;
                             }
 
                             .heart-border {
@@ -1680,6 +1703,13 @@ body {
                                 img {
                                     width: 8px;
                                 }
+                            }
+                        }
+
+                        .quick-view-container {
+                            img {
+                                width: 13px;
+                                right: 12px;
                             }
                         }
 
