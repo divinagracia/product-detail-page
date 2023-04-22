@@ -7,23 +7,26 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
         <link rel="stylesheet" href="theme/less/style.css" />
         <link rel="stylesheet" href="theme/fonts/fontie-package/Inter.css" />
+        <link
+            rel="stylesheet"
+            href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css"
+        />
         <title>Homepage</title>
     </head>
     <body>
         <div class="navigation">
             <div class="nav-header">
                 <div class="nav-header-container">
-                    <p>Welcome to Needus & Get the best product</p>
-
+                    <span>Welcome to Needus & Get the best product</span>
                     <div class="rate">
-                        <div class="eng">
-                            <p>ENG</p>
-                            <span class="arrow"></span>
+                        <div class="currency">
+                            <span>ENG</span>
+                            <i class="fa fa-angle-down"></i>
                         </div>
-                        <span>|</span>
-                        <div class="usd">
-                            <p>USD</p>
-                            <span class="arrow"></span>
+
+                        <div class="currency">
+                            <span>USD</span>
+                            <i class="fa fa-angle-down"></i>
                         </div>
                     </div>
                 </div>
@@ -38,8 +41,8 @@
                         placeholder="Seach Products"
                         onkeyup="validate(this)"
                     />
-                    <div class="header-categories">
-                        <p>All Categories <span class="arrow"></span></p>
+                    <button class="header-categories">
+                        <span>All Categories</span>
                         <div class="categories">
                             <ul>
                                 <li>Brand</li>
@@ -47,7 +50,7 @@
                                 <li>Type</li>
                             </ul>
                         </div>
-                    </div>
+                    </button>
                     <button disabled class="search-bar" title="Advanced Search">
                         <img src="theme/icons/search.png" />
                     </button>
@@ -59,9 +62,13 @@
                         <a href="#">Signup</a>
                     </div>
                     <div class="nav-menu-button">
-                        <img src="theme/icons/heart.png" />
-                        <img src="theme/icons/cart.png" />
-                        <span class="badge">6</span>
+                        <a src="#" title="wishlist"
+                            ><img src="theme/icons/heart.png"
+                        /></a>
+                        <a src="#" title="cart">
+                            <img src="theme/icons/cart.png" />
+                            <span class="badge">6</span>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -69,8 +76,8 @@
                 <div class="nav-bar-container">
                     <div class="nav-categories">
                         <img src="theme/icons/hamburger.png" />
-                        <p>All Categories</p>
-                        <span class="arrow"></span>
+                        <h3>All Categories</h3>
+                        <i class="fa fa-angle-down"></i>
                     </div>
                     <div class="nav-links">
                         <ul class="menu-link">
@@ -138,7 +145,7 @@
                     <div class="nav-contact">
                         <img src="theme/icons/call.png" />
                         <div class="contact-text">
-                            <p>CONTACT US 24/7</p>
+                            <span>CONTACT US 24/7</span>
                             <a href="tel: +1201298748" title="Contact Number"
                                 >+12012987481</a
                             >
@@ -147,8 +154,12 @@
                 </div>
             </div>
             <div class="nav-title">
-                <h2>TV COLLECTION</h2>
-                <p>HOME / PRODUCT / TV COLLECTION</p>
+                <h1>TV COLLECTION</h1>
+                <ul>
+                    <li><a href="#" title="Go to Homepage">HOME</a></li>
+                    <li><a href="#" title="Product page">PRODUCT</a></li>
+                    <li><a href="#" title="TV Collection">TV COLLECTION</a></li>
+                </ul>
             </div>
             <div class="mobile-nav">
                 <img src="theme/img/needus-logo.png" />

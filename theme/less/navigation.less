@@ -3,8 +3,6 @@
 .navigation {
     .nav-header {
         background-color: @color-tuna;
-
-        font-weight: 150;
         height: 60px;
 
         .nav-header-container {
@@ -15,27 +13,20 @@
             margin: 0 auto;
             height: 100%;
             max-width: 1800px;
+            font-weight: @light;
 
             .rate {
                 display: flex;
                 align-items: center;
 
-                .eng {
+                .currency {
                     display: flex;
                     align-items: center;
 
-                    p {
+                    span {
                         display: flex;
                         align-items: center;
-                    }
-
-                    .arrow {
-                        border: 1px solid;
-                        border-width: 0 2px 2px 0;
-                        display: inline-block;
-                        transform: rotate(45deg);
-                        padding: 3px;
-                        margin: 0 10px;
+                        margin-right: 10px;
                     }
 
                     &:hover {
@@ -43,32 +34,33 @@
                     }
                 }
 
-                span {
-                    margin: 0 15px;
+                .currency + .currency:before {
+                    content: "|";
+                    margin: 0 20px;
                 }
 
-                .usd {
-                    .eng();
+                .border {
+                    margin: 0 17px;
                 }
             }
         }
     }
 
     .site-header {
-        .nav-header > .nav-header-container;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 auto;
+        height: 100%;
+        max-width: 1800px;
         color: @color-cod-gray;
-        font-size: 20px;
 
         .nav-search {
             display: flex;
             align-items: center;
 
             input[type="text"] {
-                outline: 0;
-                font-family: "Inter";
-                font-style: normal;
                 border: 1px solid @color-gallery;
-                width: 641px;
 
                 &:focus {
                     border: 1px solid @color-cod-gray;
@@ -78,24 +70,21 @@
             .header-categories {
                 display: flex;
                 justify-content: center;
+                align-items: center;
+                background-color: @color-white;
                 border: 1px solid @color-gallery;
+                white-space: nowrap;
 
-                p {
-                    display: flex;
-                    align-items: center;
-
-                    .arrow {
+                span {
+                    &:after {
                         border: 1px solid;
                         border-width: 0 2px 2px 0;
                         display: inline-block;
                         transform: rotate(45deg);
                         padding: 3px;
-                        margin-left: 24px;
+                        margin-left: 20px;
+                        content: "";
                     }
-                }
-
-                &:hover {
-                    cursor: pointer;
                 }
             }
 
@@ -133,6 +122,7 @@
         .nav-menu {
             display: flex;
             align-items: center;
+            justify-content: space-between;
 
             .registration {
                 display: flex;
@@ -154,7 +144,6 @@
                 display: flex;
                 align-items: center;
                 position: relative;
-                margin-left: 25px;
 
                 img {
                     margin: 0 5px;
@@ -209,16 +198,20 @@
                     cursor: pointer;
                 }
 
-                .arrow {
-                    border: 1px solid;
-                    border-width: 0 3px 3px 0;
-                    display: inline-block;
-                    transform: rotate(45deg);
-                    padding: 3px;
-                }
+                h3 {
+                    display: flex;
+                    align-items: center;
+                    white-space: nowrap;
+                    font-weight: @normal;
 
-                p {
-                    margin: 0 10px;
+                    // &::after {
+                    //     border: 1px solid;
+                    //     border-width: 0 3px 3px 0;
+                    //     display: inline-block;
+                    //     transform: rotate(45deg);
+                    //     padding: 3px;
+                    //     content: "";
+                    // }
                 }
             }
 
@@ -235,9 +228,12 @@
                 }
 
                 .contact-text {
-                    p {
+                    display: flex;
+                    flex-direction: column;
+                    white-space: nowrap;
+
+                    span {
                         line-height: 1.5;
-                        text-align: center;
                         font-size: 15px;
                     }
 
@@ -260,7 +256,6 @@
                 .menu-link {
                     display: flex;
                     justify-content: space-between;
-                    padding: 0 10px;
 
                     li {
                         position: relative;
@@ -328,12 +323,30 @@
     }
 
     .nav-title {
-        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
         background-color: @color-athens-gray;
 
-        p {
-            margin: 24px 0;
-            letter-spacing: 2.5px;
+        ul {
+            display: flex;
+            letter-spacing: 1.5px;
+
+            li + li:before {
+                content: "/";
+                display: inline;
+            }
+
+            a {
+                color: @color-cod-gray;
+
+                &:hover {
+                    color: @color-pomegranate;
+                    transition: 0.3s;
+                    text-decoration: underline;
+                }
+            }
         }
     }
 
@@ -350,7 +363,10 @@
         .nav-header {
             .nav-header-container {
                 padding: 0 20px;
-                font-size: 16px;
+            }
+
+            span {
+                font-size: @x-small;
             }
         }
 
@@ -368,36 +384,45 @@
                 height: 70px;
 
                 input[type="text"] {
-                    font-size: 20px;
                     padding: 0 43px;
-                    width: 80%;
+                    width: 69%;
                     height: inherit;
+                    font-size: @small;
                 }
 
                 .header-categories {
-                    width: 26%;
+                    width: 205px;
                     height: inherit;
 
-                    p {
+                    span {
+                        display: flex;
+                        align-items: center;
                         margin: 0 20px;
                     }
                 }
 
                 .search-bar {
-                    width: 77px;
+                    width: 63px;
                 }
+            }
+
+            .nav-menu {
+                width: 227px;
             }
         }
 
         .nav-bar {
             .nav-bar-container {
                 .nav-categories {
-                    font-size: 24px;
                     width: 21%;
+
+                    i {
+                        font-size: @medium;
+                    }
                 }
 
                 .nav-links {
-                    font-size: 16px;
+                    margin: 0 30px;
                 }
 
                 .nav-contact {
@@ -407,15 +432,21 @@
         }
 
         .nav-title {
-            padding: 60px 0;
+            height: 250px;
 
-            h2 {
-                font-size: 40px;
-                margin: 20px 0;
+            h1 {
+                margin: 10px 0;
             }
 
-            p {
-                font-size: 18px;
+            ul {
+                margin: 10px 0;
+
+                li {
+                    font-size: (@small - 2);
+                    a {
+                        padding: 8px;
+                    }
+                }
             }
         }
     }
@@ -429,6 +460,10 @@
         .nav-header {
             .nav-header-container {
                 padding: 0 20px;
+
+                span {
+                    font-size: @xx-small;
+                }
             }
         }
 
@@ -448,16 +483,14 @@
                 input[type="text"] {
                     padding: 15px;
                     width: 100%;
-                    font-size: 13px;
                 }
 
                 .header-categories {
-                    font-size: 12px;
                     height: 51px;
                     width: 226px;
 
-                    p {
-                        margin: 0 5px;
+                    span {
+                        margin: 0 10px;
                     }
                 }
 
@@ -467,7 +500,7 @@
             }
 
             .nav-menu {
-                font-size: 13px;
+                width: 180px;
             }
         }
 
@@ -476,10 +509,6 @@
                 .nav-categories {
                     font-size: 20px;
                     width: 25%;
-
-                    p {
-                        font-size: 15px;
-                    }
                 }
 
                 .nav-links {
@@ -515,7 +544,7 @@
                 margin: 20px 0;
             }
 
-            p {
+            span {
                 font-size: 14px;
             }
         }
@@ -616,7 +645,7 @@
                 margin: 5px 0;
             }
 
-            p {
+            span {
                 margin: 5px 0;
                 letter-spacing: 1.2px;
                 font-size: 8px;

@@ -13,5 +13,56 @@
 @color-orange-peel: #ff9900;
 @color-cornflower-blue: #7f7cf6;
 
+// Font weight
+@light: 150;
+@normal: 400;
+@bold: 500;
 
-// Font-size
+// Font size
+@xx-small: 12px;
+@x-small: 16px;
+@small: 20px;
+@medium: 30px;
+@large: 36px;
+
+// Desktop
+@media only screen and (min-width: 1025px) {
+    span,
+    a,
+    p {
+        font-size: 18px;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    h2 {
+        font-size: 32px;
+    }
+
+    h3 {
+        font-size: 24px;
+    }
+}
+
+// Tab
+@media only screen and (max-width: 1024px) {
+    span,
+    a,
+    p {
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    h2 {
+        font-size: 32px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+}

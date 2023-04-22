@@ -1,6 +1,37 @@
+@media only screen and (min-width: 1025px) {
+  span,
+  a,
+  p {
+    font-size: 18px;
+  }
+  h1 {
+    font-size: 40px;
+  }
+  h2 {
+    font-size: 32px;
+  }
+  h3 {
+    font-size: 24px;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  span,
+  a,
+  p {
+    font-size: 14px;
+  }
+  h1 {
+    font-size: 30px;
+  }
+  h2 {
+    font-size: 32px;
+  }
+  h3 {
+    font-size: 20px;
+  }
+}
 .navigation .nav-header {
   background-color: #2f333a;
-  font-weight: 150;
   height: 60px;
 }
 .navigation .nav-header .nav-header-container {
@@ -11,118 +42,46 @@
   margin: 0 auto;
   height: 100%;
   max-width: 1800px;
+  font-weight: 150;
 }
 .navigation .nav-header .nav-header-container .rate {
   display: flex;
   align-items: center;
 }
-.navigation .nav-header .nav-header-container .rate .eng {
+.navigation .nav-header .nav-header-container .rate .currency {
   display: flex;
   align-items: center;
 }
-.navigation .nav-header .nav-header-container .rate .eng p {
+.navigation .nav-header .nav-header-container .rate .currency span {
   display: flex;
   align-items: center;
+  margin-right: 10px;
 }
-.navigation .nav-header .nav-header-container .rate .eng .arrow {
-  border: 1px solid;
-  border-width: 0 2px 2px 0;
-  display: inline-block;
-  transform: rotate(45deg);
-  padding: 3px;
-  margin: 0 10px;
-}
-.navigation .nav-header .nav-header-container .rate .eng:hover {
+.navigation .nav-header .nav-header-container .rate .currency:hover {
   cursor: pointer;
 }
-.navigation .nav-header .nav-header-container .rate span {
-  margin: 0 15px;
+.navigation .nav-header .nav-header-container .rate .currency + .currency:before {
+  content: "|";
+  margin: 0 20px;
 }
-.navigation .nav-header .nav-header-container .rate .usd {
-  display: flex;
-  align-items: center;
-}
-.navigation .nav-header .nav-header-container .rate .usd p {
-  display: flex;
-  align-items: center;
-}
-.navigation .nav-header .nav-header-container .rate .usd .arrow {
-  border: 1px solid;
-  border-width: 0 2px 2px 0;
-  display: inline-block;
-  transform: rotate(45deg);
-  padding: 3px;
-  margin: 0 10px;
-}
-.navigation .nav-header .nav-header-container .rate .usd:hover {
-  cursor: pointer;
+.navigation .nav-header .nav-header-container .rate .border {
+  margin: 0 17px;
 }
 .navigation .site-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: #fff;
   margin: 0 auto;
   height: 100%;
   max-width: 1800px;
   color: #191919;
-  font-size: 20px;
-}
-.navigation .site-header .rate {
-  display: flex;
-  align-items: center;
-}
-.navigation .site-header .rate .eng {
-  display: flex;
-  align-items: center;
-}
-.navigation .site-header .rate .eng p {
-  display: flex;
-  align-items: center;
-}
-.navigation .site-header .rate .eng .arrow {
-  border: 1px solid;
-  border-width: 0 2px 2px 0;
-  display: inline-block;
-  transform: rotate(45deg);
-  padding: 3px;
-  margin: 0 10px;
-}
-.navigation .site-header .rate .eng:hover {
-  cursor: pointer;
-}
-.navigation .site-header .rate span {
-  margin: 0 15px;
-}
-.navigation .site-header .rate .usd {
-  display: flex;
-  align-items: center;
-}
-.navigation .site-header .rate .usd p {
-  display: flex;
-  align-items: center;
-}
-.navigation .site-header .rate .usd .arrow {
-  border: 1px solid;
-  border-width: 0 2px 2px 0;
-  display: inline-block;
-  transform: rotate(45deg);
-  padding: 3px;
-  margin: 0 10px;
-}
-.navigation .site-header .rate .usd:hover {
-  cursor: pointer;
 }
 .navigation .site-header .nav-search {
   display: flex;
   align-items: center;
 }
 .navigation .site-header .nav-search input[type="text"] {
-  outline: 0;
-  font-family: "Inter";
-  font-style: normal;
   border: 1px solid #f0f0f0;
-  width: 641px;
 }
 .navigation .site-header .nav-search input[type="text"]:focus {
   border: 1px solid #191919;
@@ -130,22 +89,19 @@
 .navigation .site-header .nav-search .header-categories {
   display: flex;
   justify-content: center;
-  border: 1px solid #f0f0f0;
-}
-.navigation .site-header .nav-search .header-categories p {
-  display: flex;
   align-items: center;
+  background-color: #fff;
+  border: 1px solid #f0f0f0;
+  white-space: nowrap;
 }
-.navigation .site-header .nav-search .header-categories p .arrow {
+.navigation .site-header .nav-search .header-categories span:after {
   border: 1px solid;
   border-width: 0 2px 2px 0;
   display: inline-block;
   transform: rotate(45deg);
   padding: 3px;
-  margin-left: 24px;
-}
-.navigation .site-header .nav-search .header-categories:hover {
-  cursor: pointer;
+  margin-left: 20px;
+  content: "";
 }
 .navigation .site-header .nav-search .search-bar {
   transition: 0.3s;
@@ -175,6 +131,7 @@
 .navigation .site-header .nav-menu {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 .navigation .site-header .nav-menu .registration {
   display: flex;
@@ -192,7 +149,6 @@
   display: flex;
   align-items: center;
   position: relative;
-  margin-left: 25px;
 }
 .navigation .site-header .nav-menu .nav-menu-button img {
   margin: 0 5px;
@@ -240,15 +196,11 @@
 .navigation .nav-bar .nav-bar-container .nav-categories:hover {
   cursor: pointer;
 }
-.navigation .nav-bar .nav-bar-container .nav-categories .arrow {
-  border: 1px solid;
-  border-width: 0 3px 3px 0;
-  display: inline-block;
-  transform: rotate(45deg);
-  padding: 3px;
-}
-.navigation .nav-bar .nav-bar-container .nav-categories p {
-  margin: 0 10px;
+.navigation .nav-bar .nav-bar-container .nav-categories h3 {
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  font-weight: 400;
 }
 .navigation .nav-bar .nav-bar-container .nav-contact {
   display: flex;
@@ -261,9 +213,13 @@
   margin-right: 33px;
   width: 40px;
 }
-.navigation .nav-bar .nav-bar-container .nav-contact .contact-text p {
+.navigation .nav-bar .nav-bar-container .nav-contact .contact-text {
+  display: flex;
+  flex-direction: column;
+  white-space: nowrap;
+}
+.navigation .nav-bar .nav-bar-container .nav-contact .contact-text span {
   line-height: 1.5;
-  text-align: center;
   font-size: 15px;
 }
 .navigation .nav-bar .nav-bar-container .nav-contact .contact-text a {
@@ -281,7 +237,6 @@
 .navigation .nav-bar .nav-bar-container .nav-links .menu-link {
   display: flex;
   justify-content: space-between;
-  padding: 0 10px;
 }
 .navigation .nav-bar .nav-bar-container .nav-links .menu-link li {
   position: relative;
@@ -334,12 +289,27 @@
   display: none;
 }
 .navigation .nav-title {
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   background-color: #f4f5f8;
 }
-.navigation .nav-title p {
-  margin: 24px 0;
-  letter-spacing: 2.5px;
+.navigation .nav-title ul {
+  display: flex;
+  letter-spacing: 1.5px;
+}
+.navigation .nav-title ul li + li:before {
+  content: "/";
+  display: inline;
+}
+.navigation .nav-title ul a {
+  color: #191919;
+}
+.navigation .nav-title ul a:hover {
+  color: #e73c17;
+  transition: 0.3s;
+  text-decoration: underline;
 }
 .navigation .mobile-nav {
   display: none;
@@ -350,6 +320,8 @@
   }
   .navigation .nav-header .nav-header-container {
     padding: 0 20px;
+  }
+  .navigation .nav-header span {
     font-size: 16px;
   }
   .navigation .site-header {
@@ -363,40 +335,52 @@
     height: 70px;
   }
   .navigation .site-header .nav-search input[type="text"] {
-    font-size: 20px;
     padding: 0 43px;
-    width: 80%;
+    width: 69%;
     height: inherit;
+    font-size: 20px;
   }
   .navigation .site-header .nav-search .header-categories {
-    width: 26%;
+    width: 205px;
     height: inherit;
   }
-  .navigation .site-header .nav-search .header-categories p {
+  .navigation .site-header .nav-search .header-categories span {
+    display: flex;
+    align-items: center;
     margin: 0 20px;
   }
   .navigation .site-header .nav-search .search-bar {
-    width: 77px;
+    width: 63px;
+  }
+  .navigation .site-header .nav-menu {
+    width: 227px;
   }
   .navigation .nav-bar .nav-bar-container .nav-categories {
-    font-size: 24px;
     width: 21%;
   }
+  .navigation .nav-bar .nav-bar-container .nav-categories i {
+    font-size: 30px;
+  }
   .navigation .nav-bar .nav-bar-container .nav-links {
-    font-size: 16px;
+    margin: 0 30px;
   }
   .navigation .nav-bar .nav-bar-container .nav-contact {
     padding-left: 5%;
   }
   .navigation .nav-title {
-    padding: 60px 0;
+    height: 250px;
   }
-  .navigation .nav-title h2 {
-    font-size: 40px;
-    margin: 20px 0;
+  .navigation .nav-title h1 {
+    margin: 10px 0;
   }
-  .navigation .nav-title p {
+  .navigation .nav-title ul {
+    margin: 10px 0;
+  }
+  .navigation .nav-title ul li {
     font-size: 18px;
+  }
+  .navigation .nav-title ul li a {
+    padding: 8px;
   }
 }
 @media only screen and (max-width: 1024px) {
@@ -405,6 +389,9 @@
   }
   .navigation .nav-header .nav-header-container {
     padding: 0 20px;
+  }
+  .navigation .nav-header .nav-header-container span {
+    font-size: 12px;
   }
   .navigation .site-header {
     padding: 42px 20px;
@@ -419,28 +406,23 @@
   .navigation .site-header .nav-search input[type="text"] {
     padding: 15px;
     width: 100%;
-    font-size: 13px;
   }
   .navigation .site-header .nav-search .header-categories {
-    font-size: 12px;
     height: 51px;
     width: 226px;
   }
-  .navigation .site-header .nav-search .header-categories p {
-    margin: 0 5px;
+  .navigation .site-header .nav-search .header-categories span {
+    margin: 0 10px;
   }
   .navigation .site-header .nav-search .search-bar {
     padding: 12px;
   }
   .navigation .site-header .nav-menu {
-    font-size: 13px;
+    width: 180px;
   }
   .navigation .nav-bar .nav-bar-container .nav-categories {
     font-size: 20px;
     width: 25%;
-  }
-  .navigation .nav-bar .nav-bar-container .nav-categories p {
-    font-size: 15px;
   }
   .navigation .nav-bar .nav-bar-container .nav-links {
     font-size: 12px;
@@ -466,7 +448,7 @@
     font-size: 30px;
     margin: 20px 0;
   }
-  .navigation .nav-title p {
+  .navigation .nav-title span {
     font-size: 14px;
   }
 }
@@ -547,7 +529,7 @@
     font-size: 14px;
     margin: 5px 0;
   }
-  .navigation .nav-title p {
+  .navigation .nav-title span {
     margin: 5px 0;
     letter-spacing: 1.2px;
     font-size: 8px;
