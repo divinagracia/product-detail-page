@@ -2,7 +2,7 @@
   span,
   a,
   p {
-    font-size: 18px;
+    font-size: 16px;
   }
   h1 {
     font-size: 40px;
@@ -18,16 +18,16 @@
   span,
   a,
   p {
-    font-size: 14px;
+    font-size: 12px;
   }
   h1 {
     font-size: 30px;
   }
   h2 {
-    font-size: 32px;
+    font-size: 28px;
   }
   h3 {
-    font-size: 20px;
+    font-size: 16px;
   }
 }
 .navigation .nav-header {
@@ -172,7 +172,7 @@
 }
 .navigation .nav-bar {
   background-color: #2f333a;
-  font-weight: 400;
+  font-weight: 200;
   height: 78px;
 }
 .navigation .nav-bar .nav-bar-container {
@@ -218,21 +218,13 @@
   flex-direction: column;
   white-space: nowrap;
 }
-.navigation .nav-bar .nav-bar-container .nav-contact .contact-text span {
-  line-height: 1.5;
-  font-size: 15px;
-}
 .navigation .nav-bar .nav-bar-container .nav-contact .contact-text a {
-  font-size: 18px;
   color: #fff;
   font-weight: 400;
   transition: 0.3s;
 }
 .navigation .nav-bar .nav-bar-container .nav-contact .contact-text a:hover {
   color: #e73c17;
-}
-.navigation .nav-bar .nav-bar-container .nav-links {
-  width: 700px;
 }
 .navigation .nav-bar .nav-bar-container .nav-links .menu-link {
   display: flex;
@@ -363,6 +355,7 @@
   }
   .navigation .nav-bar .nav-bar-container .nav-links {
     margin: 0 30px;
+    width: 630px;
   }
   .navigation .nav-bar .nav-bar-container .nav-contact {
     padding-left: 5%;
@@ -426,7 +419,7 @@
   }
   .navigation .nav-bar .nav-bar-container .nav-links {
     font-size: 12px;
-    width: 450px;
+    width: 400px;
   }
   .navigation .nav-bar .nav-bar-container .nav-contact {
     padding-left: 3%;
@@ -434,12 +427,6 @@
   .navigation .nav-bar .nav-bar-container .nav-contact img {
     margin-right: 15px;
     width: 30px;
-  }
-  .navigation .nav-bar .nav-bar-container .nav-contact .contact-text p {
-    font-size: 12px;
-  }
-  .navigation .nav-bar .nav-bar-container .nav-contact .contact-text a {
-    font-size: 15px;
   }
   .navigation .nav-title {
     padding: 40px 0;
