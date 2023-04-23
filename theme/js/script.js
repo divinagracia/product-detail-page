@@ -31,6 +31,14 @@ function showCategories() {
     $(".categories").toggle();
 }
 
+$(".nav-categories").click(function () {
+    showDropdown();
+});
+
+function showDropdown() {
+    $(".nav-categories-dropdown").toggle();
+}
+
 $(".selection").on("click", function () {
     $(".selection").removeClass("selected");
     $(this).addClass("selected");
@@ -41,8 +49,8 @@ $(".variation").on("click", function () {
     $(this).addClass("selected");
 });
 
-$(".info-title ul li").on("click", function () {
-    $(".info-title ul li").removeClass("selected");
+$(".info-title h3").on("click", function () {
+    $(".info-title h3").removeClass("selected");
     $(this).addClass("selected");
     $(".description p").removeClass("show");
     let index = $(this).index();

@@ -1,5 +1,37 @@
+@media only screen and (min-width: 1025px) {
+  span,
+  a,
+  p {
+    font-size: 18px;
+  }
+  h1 {
+    font-size: 40px;
+  }
+  h2 {
+    font-size: 32px;
+  }
+  h3 {
+    font-size: 24px;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  span,
+  a,
+  p {
+    font-size: 12px;
+  }
+  h1 {
+    font-size: 30px;
+  }
+  h2 {
+    font-size: 28px;
+  }
+  h3 {
+    font-size: 15px;
+  }
+}
 .footer {
-  margin-top: 213px;
+  margin-top: 225px;
 }
 .footer .panel-wrapper {
   display: flex;
@@ -74,15 +106,14 @@
   color: #fff;
   max-width: 1800px;
   margin: 0 auto;
-  padding: 30px 20px;
+  padding: 55px 20px;
   flex-wrap: wrap;
 }
 .footer .page-footer .page-footer-container h2 {
   font-weight: 400;
 }
 .footer .page-footer .page-footer-container .about p {
-  margin: 24px 0;
-  font-size: 18px;
+  margin: 15px 0;
 }
 .footer .page-footer .page-footer-container .about .social-logos img {
   width: 30px;
@@ -99,14 +130,13 @@
 }
 .footer .page-footer .page-footer-container .footer-links ul li {
   transition: 0.3s;
-  font-size: 18px;
+  margin: 5px 0;
 }
 .footer .page-footer .page-footer-container .footer-links ul li:hover {
   color: #e73c17;
   cursor: pointer;
 }
 .footer .page-footer .page-footer-container .footer-contacts .contact-info p {
-  font-size: 18px;
   margin: 14px 0 10px;
 }
 .footer .page-footer .page-footer-container .footer-contacts .contact-info p a {
@@ -118,6 +148,7 @@
 .footer .page-footer .page-footer-container .footer-contacts .other-contacts {
   display: flex;
   align-items: center;
+  margin: 22px 0;
 }
 .footer .page-footer .page-footer-container .footer-contacts .other-contacts img {
   margin-right: 10px;
@@ -130,11 +161,15 @@
   color: #e73c17;
 }
 .footer .page-footer .copyright-section {
-  margin-top: 72px;
+  margin-top: 26px;
   text-align: center;
   border-top: 1px solid #fff;
   padding: 37px 0;
   color: #fff;
+}
+.footer .page-footer .copyright-section p {
+  margin: 15px 0;
+  font-size: 16px;
 }
 @media only screen and (min-width: 1025px) {
   .footer .panel-wrapper .subscription-container .newsletter .newsletter-text {
@@ -169,6 +204,11 @@
   }
   .footer .page-footer .page-footer-container .footer-contacts {
     width: 341px;
+  }
+}
+@media only screen and (max-width: 1313px) {
+  .footer .page-footer .page-footer-container .about {
+    width: 100%;
   }
 }
 @media only screen and (max-width: 1024px) {
@@ -351,7 +391,6 @@
   }
   .footer .page-footer .page-footer-container .footer-contacts .contact-info p {
     display: none;
-    font-size: 8px;
   }
   .footer .page-footer .page-footer-container .footer-contacts .other-contacts {
     display: none;

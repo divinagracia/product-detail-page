@@ -17,7 +17,7 @@
         <div class="navigation">
             <div class="nav-header">
                 <div class="nav-header-container">
-                    <span>Welcome to Needus & Get the best product</span>
+                    <p>Welcome to Needus & Get the best product</p>
                     <div class="rate">
                         <div class="currency">
                             <span>ENG</span>
@@ -38,19 +38,19 @@
                 <div class="nav-search">
                     <input
                         type="text"
-                        placeholder="Seach Products"
+                        placeholder="Search Products"
                         onkeyup="validate(this)"
                     />
-                    <button class="header-categories">
+                    <div class="header-categories">
                         <span>All Categories</span>
                         <div class="categories">
                             <ul>
-                                <li>Category 1</li>
-                                <li>Category 2</li>
-                                <li>Category 3</li>
+                                <li><a href="#">Category 1</a></li>
+                                <li><a href="#">Category 2</a></li>
+                                <li><a href="#">Category 3</a></li>
                             </ul>
                         </div>
-                    </button>
+                    </div>
                     <button disabled class="search-bar" title="Advanced Search">
                         <img src="theme/icons/search.png" />
                     </button>
@@ -78,19 +78,25 @@
                         <img src="theme/icons/hamburger.png" />
                         <h3>All Categories</h3>
                         <i class="fa fa-angle-down"></i>
+                        <div class="nav-categories-dropdown">
+                            <ul>
+                                <li><a href="#">Category 1</a></li>
+                                <li><a href="#">Category 2</a></li>
+                                <li><a href="#">Category 3</a></li>
+                            </ul>
+                        </div>
                     </div>
                     <div class="nav-links">
                         <ul class="menu-link">
                             <li>
-                                <a href="#">HOME <span class="arrow"></span></a>
+                                <a href="#">HOME</a>
+                                <i class="fa fa-angle-down"></i>
                                 <ul>
                                     <li><a href="#">Support</a></li>
                                     <li><a href="#">Blog</a></li>
                                     <li class="nav-dropdown">
-                                        <a href="#">
-                                            Company
-                                            <span class="arrow"></span>
-                                        </a>
+                                        <a href="#"> Company </a>
+                                        <i class="fa fa-angle-right"></i>
                                         <ul>
                                             <li>Dropdown</li>
                                             <li>Dropdown</li>
@@ -100,10 +106,8 @@
                                 </ul>
                             </li>
                             <li>
-                                <a href="#"
-                                    >ABOUT <span class="arrow"></span
-                                ></a>
-
+                                <a href="#">ABOUT </a>
+                                <i class="fa fa-angle-down"></i>
                                 <ul>
                                     <li><a href="#">Our story</a></li>
                                     <li><a href="#">Who we are</a></li>
@@ -111,9 +115,8 @@
                                 </ul>
                             </li>
                             <li>
-                                <a href="#"
-                                    >PRODUCT <span class="arrow"></span
-                                ></a>
+                                <a href="#">PRODUCT</a>
+                                <i class="fa fa-angle-down"></i>
                                 <ul>
                                     <li><a href="#">Smart TV</a></li>
                                     <li><a href="#">Smartphones</a></li>
@@ -121,9 +124,8 @@
                                 </ul>
                             </li>
                             <li>
-                                <a href="#"
-                                    >PAGES <span class="arrow"></span
-                                ></a>
+                                <a href="#">PAGES</a>
+                                <i class="fa fa-angle-down"></i>
                                 <ul>
                                     <li><a href="#">Facebook</a></li>
                                     <li><a href="#">LinkedIn</a></li>
@@ -131,9 +133,8 @@
                                 </ul>
                             </li>
                             <li>
-                                <a href="#"
-                                    >CONTACT <span class="arrow"></span
-                                ></a>
+                                <a href="#">CONTACT </a>
+                                <i class="fa fa-angle-down"></i>
                                 <ul>
                                     <li><a href="#">Contact Info</a></li>
                                     <li><a href="#">Connect now</a></li>
@@ -212,9 +213,11 @@
                     <p>*LG C2 42 (106cm) 4K Smart OLED evo TV</p>
                 </div>
                 <div class="product-details">
-                    <p><span>Brand:</span> LG</p>
-                    <p><span>Model:</span> OLED42C2PSA</p>
-                    <p><span>Availability:</span> Only 2 in Stock</p>
+                    <div class="product-attr">
+                        <span><span>Brand:</span> LG</span>
+                        <span><span>Model:</span> OLED42C2PSA</span>
+                        <span><span>Availability:</span> Only 2 in Stock</span>
+                    </div>
                     <h2>
                         LG C2 42 (106cm) 4K Smart OLED evo TV | WebOS | Cinema
                         HDR
@@ -244,14 +247,14 @@
                         </li>
                     </ul>
                     <div class="variations-container">
-                        <div class="variation">106 cm (42)</div>
-                        <div class="variation">121 cm (48)</div>
-                        <div class="variation">139 cm (55)</div>
-                        <div class="variation">164 cm (65)</div>
-                        <div class="variation">196 cm (77)</div>
-                        <div class="variation">210 cm (83)</div>
+                        <button class="variation">106 cm (42)</button>
+                        <button class="variation">121 cm (48)</button>
+                        <button class="variation">139 cm (55)</button>
+                        <button class="variation">164 cm (65)</button>
+                        <button class="variation">196 cm (77)</button>
+                        <button class="variation">210 cm (83)</button>
                     </div>
-                    <p class="tax">USD(incl. of all taxes)</p>
+                    <span class="tax">USD(incl. of all taxes)</span>
                     <h2 class="discount">$600.72 <span>$800.00</span></h2>
                     <div class="product-buttons-container">
                         <div class="container">
@@ -275,26 +278,28 @@
                                 </button>
                             </div>
                         </div>
-                        <div class="container" id="buy-button" title="Buy Now">
+                        <button
+                            class="container"
+                            id="buy-button"
+                            title="Buy Now"
+                        >
                             Buy Now
-                        </div>
-                        <div
+                        </button>
+                        <button
                             class="container"
                             id="cart-button"
                             title="Add to Cart"
                         >
                             Add to Cart
-                        </div>
+                        </button>
                     </div>
                 </div>
             </div>
             <div class="information-container">
                 <div class="info-title">
-                    <ul>
-                        <li class="selected">Description</li>
-                        <li>Specification</li>
-                        <li>Reviews</li>
-                    </ul>
+                    <h3 class="selected">Description</h3>
+                    <h3>Specification</h3>
+                    <h3>Reviews</h3>
                 </div>
                 <div class="description">
                     <p class="show">
@@ -361,9 +366,9 @@
                         <div class="prod-container">
                             <div class="badges">
                                 <div class="tag" id="new">NEW</div>
-                                <div class="heart-border">
+                                <button class="heart-border">
                                     <img src="theme/icons/rp-heart.png" />
-                                </div>
+                                </button>
                             </div>
                             <div class="quick-view-container">
                                 <img src="theme/icons/quick-view-icon.png" />
@@ -373,60 +378,68 @@
                                 src="theme/img/rp-1.png"
                                 alt="Related product image"
                             />
-                            <div class="cart-button" title="Add to Cart">
-                                <img src="theme/icons/cart.png" />
-                                <p>Add to cart</p>
+                            <div class="cart-button">
+                                <button title="Add to cart">
+                                    <img src="theme/icons/cart.png" />
+                                    <p>Add to cart</p>
+                                </button>
                             </div>
                         </div>
                         <div class="label">
-                            <p>Sony BRAVIA XR Android Tv</p>
-                            <p id="price">$800.22 <span> $1000.66</span></p>
+                            <span>Sony BRAVIA XR Android Tv</span>
+                            <span class="price"
+                                >$800.22 <span> $1000.66</span></span
+                            >
                         </div>
                     </div>
                     <div class="section">
                         <div class="prod-container">
                             <div class="badges">
                                 <div class="tag" id="discount">-10%</div>
-                                <div class="heart-border">
+                                <button class="heart-border">
                                     <img src="theme/icons/rp-heart.png" />
-                                </div>
+                                </button>
                             </div>
                             <img
                                 id="r-prod"
                                 src="theme/img/rp-2.png"
                                 alt="Related product image"
                             />
-                            <div class="cart-button" title="Add to Cart">
-                                <img src="theme/icons/cart.png" />
-                                <p>Add to cart</p>
+                            <div class="cart-button">
+                                <button title="Add to cart">
+                                    <img src="theme/icons/cart.png" />
+                                    <p>Add to cart</p>
+                                </button>
                             </div>
                         </div>
                         <div class="label">
-                            <p>Mi P1 Smart Android HD TV</p>
-                            <p id="price">$400.00</p>
+                            <span>Mi P1 Smart Android HD TV</span>
+                            <span class="price">$400.00</span>
                         </div>
                     </div>
                     <div class="section">
                         <div class="prod-container">
                             <div class="badges">
                                 <div class="tag" id="hot">HOT</div>
-                                <div class="heart-border">
+                                <button class="heart-border">
                                     <img src="theme/icons/rp-heart.png" />
-                                </div>
+                                </button>
                             </div>
                             <img
                                 id="r-prod"
                                 src="theme/img/rp-3.png"
                                 alt="Related product image"
                             />
-                            <div class="cart-button" title="Add to Cart">
-                                <img src="theme/icons/cart.png" />
-                                <p>Add to cart</p>
+                            <div class="cart-button">
+                                <button title="Add to cart">
+                                    <img src="theme/icons/cart.png" />
+                                    <p>Add to cart</p>
+                                </button>
                             </div>
                         </div>
                         <div class="label">
-                            <p>Konka OLED Android Tv</p>
-                            <p id="price">$700.00</p>
+                            <span>Konka OLED Android Tv</span>
+                            <span class="price">$700.00</span>
                         </div>
                     </div>
                     <div class="section">
@@ -435,23 +448,25 @@
                                 <div class="tag" id="warranty">
                                     2 Years Warranty
                                 </div>
-                                <div class="heart-border">
+                                <button class="heart-border">
                                     <img src="theme/icons/rp-heart.png" />
-                                </div>
+                                </button>
                             </div>
                             <img
                                 id="r-prod"
                                 src="theme/img/rp-4.png"
                                 alt="Related product image"
                             />
-                            <div class="cart-button" title="Add to Cart">
-                                <img src="theme/icons/cart.png" />
-                                <p>Add to cart</p>
+                            <div class="cart-button">
+                                <button title="Add to cart">
+                                    <img src="theme/icons/cart.png" />
+                                    <p>Add to cart</p>
+                                </button>
                             </div>
                         </div>
                         <div class="label">
-                            <p>TCL Roku Android Tv</p>
-                            <p id="price">$800.00</p>
+                            <span>TCL Roku Android Tv</span>
+                            <span class="price">$800.00</span>
                         </div>
                     </div>
                 </div>
