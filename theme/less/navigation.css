@@ -154,14 +154,16 @@
 .navigation .site-header .nav-menu .registration {
   display: flex;
 }
+.navigation .site-header .nav-menu .registration .reg-link + .reg-link:before {
+  content: "|";
+  display: inline;
+  margin: 0 10px;
+}
 .navigation .site-header .nav-menu .registration a {
   color: #191919;
 }
 .navigation .site-header .nav-menu .registration a:hover {
   text-decoration: underline;
-}
-.navigation .site-header .nav-menu .registration span {
-  margin: 0 10px;
 }
 .navigation .site-header .nav-menu .nav-menu-button {
   display: flex;
