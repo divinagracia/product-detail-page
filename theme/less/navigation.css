@@ -200,7 +200,8 @@
   margin: 0 auto;
   color: #fff;
   height: 100%;
-  max-width: 1760px;
+  max-width: 1780px;
+  padding: 0 18px;
 }
 .navigation .nav-bar .nav-bar-container .nav-categories {
   position: relative;
@@ -411,6 +412,34 @@
     padding: 8px;
   }
 }
+@media only screen and (max-width: 1300px) and (min-width: 1025px) {
+  .navigation .nav-bar .nav-bar-container .nav-categories {
+    padding: 0;
+    width: 22%;
+  }
+  .navigation .nav-bar .nav-bar-container .nav-categories h3 {
+    font-size: 20px;
+  }
+  .navigation .nav-bar .nav-bar-container .nav-links {
+    width: 50%;
+    margin: 0 20px;
+  }
+  .navigation .nav-bar .nav-bar-container .nav-links .menu-link li a {
+    font-size: 16px;
+    margin: 0;
+  }
+  .navigation .nav-bar .nav-bar-container .nav-contact {
+    padding-left: 2%;
+  }
+  .navigation .nav-bar .nav-bar-container .nav-contact img {
+    width: 30px;
+    margin-right: 20px;
+  }
+  .navigation .nav-bar .nav-bar-container .nav-contact .contact-text span,
+  .navigation .nav-bar .nav-bar-container .nav-contact .contact-text a {
+    font-size: 16px;
+  }
+}
 @media only screen and (max-width: 1024px) {
   .navigation {
     margin-bottom: 80px;
@@ -451,11 +480,14 @@
   .navigation .nav-bar .nav-bar-container .nav-categories {
     font-size: 20px;
     width: 23%;
+    padding: 0 5px;
   }
   .navigation .nav-bar .nav-bar-container .nav-links {
     display: block;
     font-size: 12px;
-    width: 400px;
+  }
+  .navigation .nav-bar .nav-bar-container .nav-links .menu-link li a {
+    margin: 0 5px;
   }
   .navigation .nav-bar .nav-bar-container .nav-contact {
     padding-left: 2%;

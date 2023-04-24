@@ -186,7 +186,8 @@
             margin: 0 auto;
             color: @color-white;
             height: 100%;
-            max-width: 1760px;
+            max-width: 1780px;
+            padding: 0 18px;
 
             .nav-categories {
                 position: relative;
@@ -484,6 +485,53 @@
     }
 }
 
+@media only screen and (max-width: 1300px) and (min-width: 1025px) {
+    .navigation {
+        .nav-bar {
+            .nav-bar-container {
+                .nav-categories {
+                    padding: 0;
+                    width: 22%;
+
+                    h3 {
+                        font-size: @small;
+                    }
+                }
+
+                .nav-links {
+                    width: 50%;
+                    margin: 0 20px;
+
+                    .menu-link {
+                        li {
+                            a {
+                                font-size: @x-small;
+                                margin: 0;
+                            }
+                        }
+                    }
+                }
+
+                .nav-contact {
+                    padding-left: 2%;
+
+                    img {
+                        width: 30px;
+                        margin-right: 20px;
+                    }
+
+                    .contact-text {
+                        span,
+                        a {
+                            font-size: @x-small;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
 // Tab
 @media only screen and (max-width: 1024px) {
     .navigation {
@@ -541,12 +589,20 @@
                 .nav-categories {
                     font-size: 20px;
                     width: 23%;
+                    padding: 0 5px;
                 }
 
                 .nav-links {
                     display: block;
                     font-size: 12px;
-                    width: 400px;
+
+                    .menu-link {
+                        li {
+                            a {
+                                margin: 0 5px;
+                            }
+                        }
+                    }
                 }
 
                 .nav-contact {
