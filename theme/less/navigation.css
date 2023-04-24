@@ -158,6 +158,7 @@
   content: "|";
   display: inline;
   margin: 0 10px;
+  color: #f0f0f0;
 }
 .navigation .site-header .nav-menu .registration a {
   color: #191919;
@@ -175,6 +176,7 @@
 }
 .navigation .site-header .nav-menu .nav-menu-button img:hover {
   cursor: pointer;
+  transform: scale(1.2);
 }
 .navigation .site-header .nav-menu .nav-menu-button .badge {
   background-color: #e23000;
