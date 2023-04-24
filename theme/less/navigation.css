@@ -30,6 +30,22 @@
     font-size: 15px;
   }
 }
+@media only screen and (max-width: 767px) {
+  span,
+  a,
+  p {
+    font-size: 8px;
+  }
+  h1 {
+    font-size: 14px;
+  }
+  h2 {
+    font-size: 13px;
+  }
+  h3 {
+    font-size: 10px;
+  }
+}
 .navigation .nav-header {
   background-color: #2f333a;
   height: 60px;
@@ -368,6 +384,7 @@
     font-size: 30px;
   }
   .navigation .nav-bar .nav-bar-container .nav-links {
+    display: block;
     margin: 0 30px;
     width: 630px;
   }
@@ -432,6 +449,7 @@
     width: 23%;
   }
   .navigation .nav-bar .nav-bar-container .nav-links {
+    display: block;
     font-size: 12px;
     width: 400px;
   }
@@ -443,7 +461,7 @@
     width: 25px;
   }
   .navigation .nav-title {
-    padding: 40px 0;
+    height: 150px;
   }
   .navigation .nav-title h2 {
     font-size: 30px;
@@ -469,39 +487,36 @@
   }
   .navigation .nav-links .menu-link li {
     padding: 18px 30px;
-    font-size: 10px;
     border-bottom: 1px solid #d9d9d9;
   }
   .navigation .nav-links .menu-link li a {
     display: flex;
     align-items: center;
+    width: 100%;
     justify-content: space-between;
+    font-size: 12px;
     color: #191919;
     font-weight: 700;
   }
-  .navigation .nav-links .menu-link li .arrow {
-    border: 1px solid;
-    border-width: 0 1px 1px 0;
-    display: inline-block;
-    transform: rotate(45deg);
-    padding: 3px;
+  .navigation .nav-links .menu-link li a i {
+    font-size: 16px;
   }
   .navigation .nav-links .menu-link li ul {
     display: none;
   }
-  .navigation .nav-links .menu-link li ul a {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
   .navigation .nav-links .menu-link li ul li {
     border: 0;
-    padding: 8px 12px;
+    padding: 8px 0px;
   }
   .navigation .nav-links .menu-link li ul li a {
     font-weight: 500;
   }
+  .navigation .nav-links .menu-link li ul .nav-dropdown li a {
+    font-weight: 400;
+    padding: 0 10px;
+  }
   .navigation .mobile-nav {
+    display: flex;
     justify-content: space-between;
     padding: 11px 20px;
     align-items: center;
@@ -523,16 +538,24 @@
     padding: 5px;
     display: flex;
   }
+  .navigation .nav-header,
+  .navigation .site-header,
+  .navigation .nav-bar {
+    display: none;
+  }
   .navigation .nav-title {
-    padding: 25px 0;
+    height: 100px;
   }
-  .navigation .nav-title h2 {
-    font-size: 14px;
-    margin: 5px 0;
+  .navigation .nav-title ul {
+    margin: 3px 0;
   }
-  .navigation .nav-title span {
-    margin: 5px 0;
-    letter-spacing: 1.2px;
+  .navigation .nav-title ul li {
     font-size: 8px;
+  }
+  .navigation .nav-title ul li a {
+    padding: 0 2px;
+  }
+  .navigation .nav-title h1 {
+    margin: 8px 0;
   }
 }
