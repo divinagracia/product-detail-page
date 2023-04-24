@@ -88,6 +88,11 @@ $(".menu-icon").on("click", function () {
 
 function showMenu() {
     $(".nav-links").toggle();
+    if ($("body").css("overflow") == "visible") {
+        $("body").css("overflow", "hidden");
+    } else {
+        $("body").css("overflow", "visible");
+    }
 }
 
 $(".navigation").on("click", ".mobile li", function (e) {
