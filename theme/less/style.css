@@ -1483,14 +1483,6 @@
   .footer .page-footer .page-footer-container .about .social-logos img:nth-of-type(even) {
     margin: 0 10px;
   }
-  .footer .page-footer .page-footer-container .about .arrow {
-    border: solid #fff;
-    border-width: 0 2px 2px 0;
-    display: inline-block;
-    padding: 3px;
-    transform: rotate(45deg);
-    -webkit-transform: rotate(45deg);
-  }
   .footer .page-footer .page-footer-container .footer-links {
     display: block;
     width: 100%;
@@ -1510,14 +1502,6 @@
     display: none;
     margin: 10px;
     font-size: 8px;
-  }
-  .footer .page-footer .page-footer-container .footer-links ul .arrow {
-    border: solid #fff;
-    border-width: 0 2px 2px 0;
-    display: inline-block;
-    padding: 3px;
-    transform: rotate(45deg);
-    -webkit-transform: rotate(45deg);
   }
   .footer .page-footer .page-footer-container .footer-contacts {
     display: block;
@@ -1543,14 +1527,6 @@
   .footer .page-footer .page-footer-container .footer-contacts .other-contacts img {
     width: 18px;
   }
-  .footer .page-footer .page-footer-container .footer-contacts .arrow {
-    border: solid #fff;
-    border-width: 0 2px 2px 0;
-    display: inline-block;
-    padding: 3px;
-    transform: rotate(45deg);
-    -webkit-transform: rotate(45deg);
-  }
   .footer .page-footer .copyright-section {
     padding: 12px;
     border: none;
@@ -1565,6 +1541,9 @@
   .footer .page-footer .copyright-section p {
     font-size: 7px;
     margin: 12px 0;
+  }
+  .footer .page-footer i {
+    font-size: 18px;
   }
 }
 *,
