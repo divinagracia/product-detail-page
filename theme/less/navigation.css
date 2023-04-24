@@ -304,6 +304,9 @@
   align-items: center;
   margin: 0 10px;
 }
+.navigation .nav-bar .nav-bar-container .nav-links .menu-link li a i {
+  margin: 0 10px;
+}
 .navigation .nav-bar .nav-bar-container .nav-links .menu-link li a:hover {
   color: #e73c17;
 }
