@@ -100,11 +100,12 @@
             }
 
             .discount {
-                font-weight: 400;
+                font-weight: @normal;
+                display: flex;
+                align-items: center;
 
-                span {
+                .discount-price {
                     color: @color-alto;
-                    font-size: 22px;
                     text-decoration: line-through;
                     margin: 0 10px;
                 }
@@ -492,18 +493,14 @@
                     }
                 }
 
-                .discount {
-                    font-size: 32px;
-                }
-
                 .product-buttons-container {
                     margin: 15px 0;
                     display: flex;
                     justify-content: space-evenly;
 
                     .container {
-                        width: 200px;
-                        height: 62px;
+                        width: 150px;
+                        height: 55px;
                         font-size: 18px;
                     }
                 }
@@ -608,17 +605,12 @@
                     }
                 }
 
-                .tax {
-                    font-size: 7px;
+                .discount {
+                    margin: 3px 0 15px;
                 }
 
-                .discount {
-                    font-size: 13px;
-
-                    span {
-                        font-size: 15px;
-                        margin: 0 3px;
-                    }
+                .tax {
+                    font-size: 7px;
                 }
 
                 .product-buttons-container {
@@ -638,10 +630,6 @@
                         .container();
 
                         button {
-                            font-size: 18px;
-                        }
-
-                        p {
                             font-size: 12px;
                         }
 
@@ -760,6 +748,7 @@
                             span {
                                 font-size: 8px;
                                 margin: 0 2px;
+                                white-space: nowrap;
                             }
 
                             img {
